@@ -2495,7 +2495,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  height: 46px;
+  height: 42px;
   font-weight: 600;
   color: #212529;
   text-align: center;
@@ -2511,6 +2511,10 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn.form-control,
+.btn.m-large {
+  height: 46px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2618,8 +2622,8 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #23BD6A;
+  border-color: #23BD6A;
 }
 
 .btn-success:hover {
@@ -3920,6 +3924,9 @@ input[type="button"].btn-block {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+.custom-select.m-large {
+  height: 46px;
 }
 
 .custom-select:focus {

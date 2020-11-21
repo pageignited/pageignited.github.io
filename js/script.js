@@ -1,76 +1,39 @@
 
 $(document).ready(function(){
-    $('.offers-list').slick({
-        dots: true,
-        infinite: true,
+    $('#maniNavMobile').slick({
+        dots: false,
+        infinite: false,
         speed: 300,
-        slidesToShow: 2,
-        centerMode: true,
-        //variableWidth: true,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        arrows: false,
         centerPadding: "0px",
-        responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                variableWidth: true
-              }
-            },
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-        ],
-        prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-        nextArrow:'<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>'
     });
 
-    $('.popular-list').slick({
-        dots: true,
-        infinite: true,
+    $('#causerrsList').slick({
+        dots: false,
+        infinite: false,
         speed: 300,
-        slidesToShow: 3,
-        centerMode: true,
-        //variableWidth: true,
-        centerPadding: "0px",
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        arrows: true,
+        centerPadding: "30px",
         responsive: [
             {
-              breakpoint: 992,
+              breakpoint: 767,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-                variableWidth: true
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                variableWidth: true
-              }
-            },
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                arrows: false
               }
             }
         ],
-        prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-        nextArrow:'<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>'
+        prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow:'<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+    });
+
+    $('.carousel').carousel({
+      interval: false
     });
 
     $('.merchants-list').slick({
@@ -111,56 +74,56 @@ $(document).ready(function(){
         nextArrow:'<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>'
     });
 
-    if($(window).width() > 992) {
-      $('#brandNav').slick('unslick');
-    }
-    else {
-      $('#brandNav').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        centerMode: false,
-        //variableWidth: true,
-        centerPadding: "0",
-        responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToScroll: 2,
-                variableWidth: true
-              }
-            }
-        ],
-        prevArrow:'<button type="button" class="slick-prev square-shape"><i class="fas fa-arrow-left"></i></button>',
-        nextArrow:'<button type="button" class="slick-next square-shape"><i class="fas fa-arrow-right"></i></button>'
+    if($(window).width() < 992) {
+      $('#productThumbSlide').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          //variableWidth: true,
+          arrows: false,
+          centerPadding: "0px"
+      });
+
+      $('#productDetailSuggesion').slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          centerMode: false,
+          variableWidth: false,
+          arrows: false,
+          centerPadding: "0px"
       });
     }
 
 });
 
 $(window).resize(function(){
-  if($(window).width() > 992) {
-    $('#brandNav').slick('unslick');
-  }
-  else {
-    $('#brandNav').slick({
-      dots: false,
-      infinite: false,
-      speed: 300,
-      centerMode: false,
-      //variableWidth: true,
-      centerPadding: "0",
-      responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToScroll: 2,
-              variableWidth: true
-            }
-          }
-      ],
-      prevArrow:'<button type="button" class="slick-prev square-shape"><i class="fas fa-arrow-left"></i></button>',
-      nextArrow:'<button type="button" class="slick-next square-shape"><i class="fas fa-arrow-right"></i></button>'
+  if($(window).width() < 992) {
+    $('#productThumbSlide').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        //variableWidth: false,
+        arrows: false,
+        centerPadding: "0px"
+    });
+
+    $('#productDetailSuggesion').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        arrows: false,
+        centerPadding: "0px"
     });
   }
 });
@@ -186,7 +149,7 @@ $(document).ready(function(){
       $('body').addClass('drawer-menu-opened');
     })
 
-    $('.drawer-backdrop').click(function(){
+    $('.drawer-backdrop, .close-drawer-menu').click(function(){
       $('body').removeClass('drawer-menu-opened');
     })
 })
