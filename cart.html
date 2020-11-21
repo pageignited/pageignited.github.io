@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Product Detail</title>
+<title>Cart</title>
 
 <!-- Google Web Fonts
 ================================================== -->
@@ -57,6 +57,74 @@
   <div class="drawer-backdrop"></div>
   <!--/mobile main menu-->
 
+  <!--cart menu-->
+  <div class="cart-list-drawer">
+    <button type="button" class="close-cart-menu"><i class="far fa-times-circle"></i></button>
+    <div class="cart-content">
+      <h3 class="cart-title">Your Cart (2)</h3>
+      <ul class="list-reseter cart-item-list">
+        <li class="cart-item clearfix">
+          <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+          <aside class="cart-item-info">
+            <div class="d-flex justify-content-between">
+              <span>Maui Moisture</span>
+              <a href="#" class="cart-item-action">Remove</a>
+            </div>
+            <strong>$25.99</strong>
+            <p class="no-margin">Option, Option, Option</p>
+            <span>Qty - 1 +</span>
+          </aside>
+        </li>
+        <li class="cart-item clearfix">
+          <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+          <aside class="cart-item-info">
+            <div class="d-flex justify-content-between">
+              <span>Maui Moisture</span>
+              <a href="#" class="cart-item-action">Remove</a>
+            </div>
+            <strong>$25.99</strong>
+            <p class="no-margin">Option, Option, Option</p>
+            <span>Qty - 1 +</span>
+          </aside>
+        </li>
+      </ul>
+
+      <div class="cart-total bottom-margin-20">
+        <ul class="list-reseter">
+          <li class="d-flex justify-content-between cart-total-price">
+            <span class="label">Subtotal:</span>
+            <span class="value">$25.99</span>
+          </li>
+          <li class="d-flex justify-content-between cart-total-price">
+            <span class="label">Shipping:</span>
+            <span class="value">FREE</span>
+          </li>
+        </ul>
+        <p>Most order ship in 3-5 business days with 3-5 days in transit</p>
+      </div>
+
+      <button type="button" class="btn btn-lg btn-success block bottom-margin-30">Proceed to Checkout</button>
+
+      <h5 class="bottom-margin-25">You might also like</h5>
+      <ul class="list-reseter cart-item-list cart-item-suggest">
+        <li class="cart-item clearfix">
+          <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+          <aside class="cart-item-info">
+            <div class="d-flex justify-content-between">
+              <span>Maui Moisture</span>
+              <a href="#" class="cart-item-action add">Add</a>
+            </div>
+            <strong>$25.99</strong>
+            <p class="no-margin">Option, Option, Option</p>
+            <span>Qty - 1 +</span>
+          </aside>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cart-list-backdrop"></div>
+  <!--/cart menu-->
+
   <!--header-->
   <header id="header">
     <div class="main-nav-outer fixed-top">
@@ -75,7 +143,7 @@
           <li><a href="#"><i class="fas fa-mobile-alt"></i> Call</a></li>
           <li><a href="#"><i class="far fa-comment-dots"></i> Chat</a></li>
           <li><a href="#">Sign In</a></li>
-          <li><a href="#"><i class="fas fa-shopping-cart"></i> <span class="badge badge-secondary badge-success">2</span></a></li>
+          <li><a href="javascript:void(0)" class="open-cart-menu"><i class="fas fa-shopping-cart"></i> <span class="badge badge-secondary badge-success">2</span></a></li>
         </ul>
         
         <!--mobile top bar-->
@@ -88,7 +156,9 @@
           <button class="searh-on-top"><i class="fas fa-search"></i></button>
         </div>
         <div class="mobile-brand hiddem-above-lg"><img src="img/Causerr.png" alt="Causerr" /></div>
-        <a href="#" class="hiddem-above-lg mobile-top-link">Sign In</a>
+        <ul class="list-reseter top-right-nav hiddem-above-lg">
+          <li><a href="javascript:void(0)" class="open-cart-menu"><i class="fas fa-shopping-cart"></i> <span class="badge badge-secondary badge-success">2</span></a></li>
+        </ul>
         <!--/mobile top bar-->
 
       </nav>
@@ -131,7 +201,7 @@
         </div>
 
         <!--Product thumb slider for mobile-->
-        <div id="productThumbSlide" class="lg-thumb-swipe-slider hiddem-above-lg bottom-margin-40">
+        <div id="productThumbSlide" class="lg-thumb-swipe-slider hiddem-above-lg bottom-margin-20">
           <div class="product-thumb-item">
             <span class="product-tags right-top">Free Shipping</span>
             <img class="thumnail" src="img/product-main.png" alt="" />

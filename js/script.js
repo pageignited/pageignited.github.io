@@ -36,96 +36,29 @@ $(document).ready(function(){
       interval: false
     });
 
-    $('.merchants-list').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        centerMode: true,
-        //variableWidth: true,
-        centerPadding: "0px",
-        responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
-                variableWidth: true
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                variableWidth: true
-              }
-            },
-            {
-              breakpoint: 640,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: true
-              }
-            }
-        ],
-        prevArrow:'<button type="button" class="slick-prev"><i class="fas fa-arrow-left"></i></button>',
-        nextArrow:'<button type="button" class="slick-next"><i class="fas fa-arrow-right"></i></button>'
-    });
-
-    if($(window).width() < 992) {
-      $('#productThumbSlide').slick({
-          dots: true,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          //variableWidth: true,
-          arrows: false,
-          centerPadding: "0px"
-      });
-
-      $('#productDetailSuggesion').slick({
-          dots: false,
-          infinite: false,
-          speed: 300,
-          slidesToShow: 1,
-          centerMode: false,
-          variableWidth: false,
-          arrows: false,
-          centerPadding: "0px"
-      });
-    }
-
-});
-
-$(window).resize(function(){
-  if($(window).width() < 992) {
     $('#productThumbSlide').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
-        //variableWidth: false,
-        arrows: false,
-        centerPadding: "0px"
-    });
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      //variableWidth: true,
+      arrows: false,
+      centerPadding: "0px"
+  });
 
-    $('#productDetailSuggesion').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: false,
-        variableWidth: true,
-        arrows: false,
-        centerPadding: "0px"
-    });
-  }
+  $('#productDetailSuggesion').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: false,
+      variableWidth: true,
+      arrows: false,
+      centerPadding: "0px"
+  });
+
 });
 
 
@@ -147,9 +80,17 @@ function stickyClass() {
 $(document).ready(function(){
     $('.bar-btn').click(function(){
       $('body').addClass('drawer-menu-opened');
-    })
+    });
 
     $('.drawer-backdrop, .close-drawer-menu').click(function(){
       $('body').removeClass('drawer-menu-opened');
-    })
+    });
+
+    $('.open-cart-menu').click(function(){
+      $('body').addClass('cart-menu-opened');
+    });
+
+    $('.cart-list-backdrop, .close-cart-menu').click(function(){
+      $('body').removeClass('cart-menu-opened');
+    });
 })
