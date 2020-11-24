@@ -10,6 +10,9 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .f-max-width-half {
+        padding-right: 20px;
+    }
 }
 @media (min-width: 992px) {
     .show-from-lg { display: block !important;}
@@ -47,6 +50,33 @@
     .details-right-panel {
         float: none;
         width: auto;
+    }
+    .banner.index {
+        min-height: 410px;
+        margin-bottom: 0;
+    }
+    .banner-slider-item h1 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .banner-slider-item p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .banner-slider {
+        padding: 35px;
+        max-width: 450px;
+    }
+    .light-green-section {
+        padding: 30px 0 30px 0;
+    }
+    .creation-forms-holder {
+        padding-left: 0;
+    }
+    .creation-forms {
+        padding: 40px 0;
     }
 }
 
@@ -117,10 +147,79 @@
     .md-title-line .footer-blog-links {
         margin-bottom: 30px;
     }
+    .banner.index {
+        min-height: 370px;
+        background-position:right;
+    }
+    .banner-slider-item {
+        margin-bottom: 0;
+    }
+    .banner-slider-item h1 {
+        font-size: 26px;
+    }
+    .banner-slider-item p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .banner-slider {
+        padding: 30px 20px;
+        max-width: none;
+        width: auto;
+        position: static;
+        margin:0 -20px;
+    }
+    .banner-slide-btn {
+        text-align: center;
+    }
+    .banner-slide-btn .md-block {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .text-item-list {
+        list-style: none;
+        margin: 0;
+    }
+    .text-item-list li {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .f-max-width-half {
+        padding: 20px;
+    }
+    .big-bottom-gap {
+        margin-bottom: 20px;
+    }
+    .pay-pal-position {
+        position: static;
+        display: block;
+        margin-top: 10px;
+    }
+    .steps-count {
+        line-height: 36px;
+    }
+    .expand-collapse-title.as-form-title {
+        line-height: 36px;
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    .expand-collapse-title .left-icon {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .form-sign-in-text {
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 640px) {
-    
+    .cat-causerr-item {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 480px) {

@@ -1,6 +1,26 @@
-
 $(document).ready(function(){
-    $('#maniNavMobile').slick({
+  $('#causerrSlider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: false,
+    variableWidth: false,
+    arrows: true,
+    centerPadding: "30px",
+    responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false
+          }
+        }
+    ],
+    prevArrow:'<button type="button" class="slick-prev white-away"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow:'<button type="button" class="slick-next white-away"><i class="fas fa-chevron-right"></i></button>'
+});  
+  
+  $('#maniNavMobile').slick({
         dots: false,
         infinite: false,
         speed: 300,
@@ -8,7 +28,7 @@ $(document).ready(function(){
         centerMode: false,
         variableWidth: true,
         arrows: false,
-        centerPadding: "0px",
+        centerPadding: "0px"
     });
 
     $('#causerrsList').slick({
@@ -46,9 +66,43 @@ $(document).ready(function(){
       //variableWidth: true,
       arrows: false,
       centerPadding: "0px"
-  });
+    });
 
-  $('#productDetailSuggesion').slick({
+    $('#productDetailSuggesion').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        arrows: false,
+        centerPadding: "0px"
+    });
+
+    $('#homeBannerSlider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      variableWidth: false,
+      arrows: false,
+      centerPadding: "0px"
+    });
+
+    $('#storeSlider').slick({
+      dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true,
+        arrows: false,
+        centerPadding: "0px"
+    });
+
+    $('#charitiesSlider').slick({
       dots: false,
       infinite: false,
       speed: 300,
@@ -57,7 +111,7 @@ $(document).ready(function(){
       variableWidth: true,
       arrows: false,
       centerPadding: "0px"
-  });
+    });
 
 });
 

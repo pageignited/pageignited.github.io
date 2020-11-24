@@ -28,10 +28,11 @@
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 </head>
-<body>
+<body class="freezing-menu-static">
 
   <!--mobile main menu-->
   <div class="drawer-menu hiddem-above-lg">
+    <button type="button" class="close-drawer-menu"><i class="far fa-times-circle"></i></button>
     <div class="mobile-brand bottom-margin-10"><img src="img/Causerr.png" alt="Causerr" /></div>
     <div class="bottom-margin-40"><a href="#" class="mobile-top-link">Sign In</a></div>
 
@@ -60,21 +61,26 @@
   <header id="header">
     <div class="main-nav-outer fixed-top">
       <nav class="navbar justify-content-between main-nav">
-        <a class="navbar-brand hiddem-from-lg" href="#">Charity Name</a>
+        
+        <div class="hiddem-from-lg clearfix">
+          <div class="search-on-top">
+            <i class="fas fa-search"></i>
+            <input class="search-input" type="text" placeholder="Search a Cause" aria-label="Search a Cause">
+          </div>
+          <select class="cause-select-control">
+            <option selected>For Causes</option>
+            <option>Causes cat 1</option>
+            <option>Causes cat 2</option>
+            <option>Causes cat 3</option>
+          </select>
+        </div>
 
-        <ul class="list-reseter top-middle-nav hiddem-from-lg">
-          <li><a href="#">Everything</a></li>
-          <li><a href="#">Latest</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">On Sale</a></li>
-          <li><a href="#">Close Out</a></li>
-        </ul>
+        <div class="hiddem-from-lg mobile-brand"><img src="img/Causerr.png" alt="Causerr" /></div>
 
         <ul class="list-reseter top-right-nav hiddem-from-lg">
-          <li><a href="#"><i class="fas fa-mobile-alt"></i> Call</a></li>
-          <li><a href="#"><i class="far fa-comment-dots"></i> Chat</a></li>
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#"><i class="fas fa-shopping-cart"></i> <span class="badge badge-secondary badge-success">2</span></a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#" class="link-color">Sign In</a></li>
+          <li><button type="button" class="btn btn-success">Start a Shop</button></li>
         </ul>
         
         <!--mobile top bar-->
@@ -87,7 +93,9 @@
           <button class="searh-on-top"><i class="fas fa-search"></i></button>
         </div>
         <div class="mobile-brand hiddem-above-lg"><img src="img/Causerr.png" alt="Causerr" /></div>
-        <a href="#" class="hiddem-above-lg mobile-top-link">Sign In</a>
+        <ul class="list-reseter top-right-nav hiddem-above-lg">
+          <li><a href="#" class="link-color">Sign In</a></li>
+        </ul>
         <!--/mobile top bar-->
 
       </nav>
@@ -95,170 +103,225 @@
   </header>
   <!--/header-->
 
-  <!--Swipe menu for mobile-->
-  <div class="swipe-menu-outer hiddem-above-lg">
-    <ul class="list-reseter swipe-cat-menu">
-      <li><a href="#" class="current">Everything</a></li>
-      <li><a href="#">Latest</a></li>
-      <li><a href="#">Trending</a></li>
-      <li><a href="#">Home & Kitchen</a></li>
-    </ul>
-  </div>
-  <!--/Swipe menu for mobile-->
-
   <!--Banner-->
-  <section class="banner content-center-v-h" style="background-image: url(img/banner-owner.png);">
-      <h2>Headline <a href="#">Edit</a></h2>
-  </section>
+  <div class="banner-outer">
+    <section class="banner index" style="background-image: url(img/banner-home.png);">&nbsp;</section>
+    <div class="desktop-view-center z-index-banner-underneath">
+      <div id="homeBannerSlider" class="banner-slider">
+        <div class="banner-slider-item">
+          <h1>Sell Merchandise to Support Your Cause</h1>
+          <p>Causer helps your charity build and curate and online store with 40% of sales going back to a charity to fuel your mission</p>
+          <div class="banner-slide-btn"><button type="button" class="btn md-block btn-success">Create Your Online Store</button><a href="#" class="btn btn-link link-color">Learn More</a></div>
+        </div>
+        <div class="banner-slider-item">
+          <h1>Sell Merchandise to Support Your Cause</h1>
+          <p>Causer helps your charity build and curate and online store with 40% of sales going back to a charity to fuel your mission</p>
+          <div class="banner-slide-btn"><button type="button" class="btn md-block btn-success">Create Your Online Store</button><a href="#" class="btn btn-link link-color">Learn More</a></div>
+        </div>
+        <div class="banner-slider-item">
+          <h1>Sell Merchandise to Support Your Cause</h1>
+          <p>Causer helps your charity build and curate and online store with 40% of sales going back to a charity to fuel your mission</p>
+          <div class="banner-slide-btn"><button type="button" class="btn md-block btn-success">Create Your Online Store</button><a href="#" class="btn btn-link link-color">Learn More</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--/Banner-->
 
-  <div class="clearfix desktop-view-center">
-    <aside class="left-panel-column">
-      <span class="block-thumb-outer content-center-v-h bottom-margin-5"><img src="img/who-icon.png" alt="WHO" /></span>
-      <a href="#" class="font-size-p-large hiddem-from-md">Edit</a>
-    </aside>
-    <div class="right-panel-column font-size-p-large">
-      <h4>Our Story</h4>
-      <p class="bottom-margin-5 w-75 w-md-100">Ellen loves Australia and its people, and right now they need our help. For months, wildfires have been burning across the country in record-breaking heat and strong winds. <a href="#" class="hidden-above-md">Read More</a></p>
-      <a href="#" class="hiddem-from-md">Edit</a>
+  <!--Start Raising-->
+  <section class="white-bg-section">
+    <div class="desktop-view-center text-align-center">
+      <h2 class="color-title-h3">Start Raising Funds Now</h2>
+      <p class="max-width-md bottom-margin-40">To get started, click the "Create Your Online Store" button and fill in your charity profile. Causerr will take care of the rest: product selection, customer service, and order fulfillment!</p>
+      <ul class="list-reseter row steps-text steps-text-home bottom-margin-40">
+        <li class="col-md-4">
+          <span class="steps-text-title"><strong>1</strong></span>
+          <h3>Build Your Shop</h3>
+          <ul class="text-item-list">
+            <li>Tell us about your Charity</li>
+            <li>Add a logo</li>
+            <li>Pick a store name</li>
+          </ul>
+        </li>
+        <li class="col-md-4">
+          <span class="steps-text-title"><strong>2</strong></span>
+          <h3>Launch Your Show</h3>
+          <ul class="text-item-list">
+            <li>We'll fill your store with products</li>
+            <li>We'll process orders</li>
+            <li>We ship &amp; handle all customer orders</li>
+          </ul>
+        </li>
+        <li class="col-md-4">
+          <span class="steps-text-title"><strong>3</strong></span>
+          <h3>Fund Your Charity</h3>
+          <ul class="text-item-list">
+            <li>Share products on your social media</li>
+            <li>Let doners know about your store</li>
+            <li>We'll deposit 40% of all sales into your bank</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="text-align-center"><button type="button" class="btn btn-success">Create Your Online Store</button></div>
     </div>
-  </div>
-
-  <span class="content-seperator bold-line-md">&nbsp;</span>
-
-  <!--Main content-->
-  <section class="clearfix desktop-view-center content-holder">
-
-    <!--left panel-->
-    <aside class="left-panel-column hiddem-from-md">
-      <h4>All Categories</h4>
-
-      <ul class="list-reseter link-list">
-        <li><a href="#" class="current">Everything</a></li>
-        <li><a href="#">Latest</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Home & Kitchen</a></li>
-      </ul>
-
-      <span class="category-divider">&nbsp;</span>
-
-      <h4 class="bottom-margin-10">Price</h4>
-
-      <ul class="list-reseter link-list">
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  Under $25 (100)</label></li>
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  $25-$49 (75)</label></li>
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  $50-$99 (123)</label></li>
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  $100-$149 (78)</label></li>
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  $150-$199 (175)</label></li>
-      </ul>
-
-      <span class="category-divider">&nbsp;</span>
-
-      <h4>Special Offers</h4>
-
-      <ul class="list-reseter link-list bottom-margin-40">
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  Free Shipping (24)</label></li>
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  On Sale (54)</label></li>
-        <li><label class="checkbox-control"><input type="checkbox" /><span class="checkmark"></span>  Closeouts (12)</label></li>
-      </ul>
-
-      <a href="#" class="gray-link">Clear All Filters</a>
-    </aside>
-    <!--/left panel-->
-
-    <!--right panel-->
-    <div class="right-panel-column">
-      <h3 class="hiddem-from-md">Everything</h3>
-      <div class="row bottom-margin-20 hidden-above-md">
-        <div class="col-5">
-          <div class="form-group">
-            <label>Filter</label>
-            <select class="form-control">
-              <option selected>Filter</option>
-              <option>Filter 1</option>
-              <option>Filter 2</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-2"></div>
-        <div class="col-5">
-          <div class="form-group">
-            <label>Sort by</label>
-            <select class="form-control">
-              <option selected>Trending</option>
-              <option>Trending 1</option>
-              <option>Trending 2</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row col-gutter-40">
-        <!--Each Product-->
-        <div class="col-lg-4 bottom-margin-30">
-          <a href="#" class="product-thumnail content-center-v-h">
-            <span class="product-tags">Free Shipping</span>
-            <img src="img/item1.png" alt="Product Title" />
-          </a>
-          <h4 class="product-title">Product Title <span class="hit-count"><i class="far fa-heart"></i> 2k</span></h4>
-          <div class="price-line">$25.99 <span class="offer">25% off</span><span class="prev-price">$32.99</span></div>
-          <span class="text-divider">&nbsp;</span>
-          <div class="row font-size-p-large bottom-margin-5">
-            <span class="col-7">Potential Profit</span>
-            <span class="col-5">Orders</span>
-          </div>
-          <div class="row font-size-p-large font-weight-800 bottom-margin-15">
-            <span class="col-7">$3</span>
-            <span class="col-5 link-color">23</span>
-          </div>
-          <button type="button" class="btn btn-dark">Hide from Shop</button>
-        </div>
-        <!--/Each Product-->
-
-        <!--Each Product-->
-        <div class="col-lg-4 bottom-margin-30">
-          <a href="#" class="product-thumnail content-center-v-h">
-            <span class="product-tags">Free Shipping</span>
-            <img src="img/item2.png" alt="Product Title" />
-          </a>
-          <h4 class="product-title">Product Title <span class="hit-count"><i class="far fa-heart"></i> 2k</span></h4>
-          <div class="price-line">$25.99 <span class="offer">25% off</span><span class="prev-price">$32.99</span></div>
-          <span class="text-divider">&nbsp;</span>
-          <div class="row font-size-p-large bottom-margin-5">
-            <span class="col-7">Potential Profit</span>
-            <span class="col-5">Orders</span>
-          </div>
-          <div class="row font-size-p-large font-weight-800 bottom-margin-15">
-            <span class="col-7">$3</span>
-            <span class="col-5 link-color">23</span>
-          </div>
-          <button type="button" class="btn btn-dark">Display On Shop</button>
-        </div>
-        <!--/Each Product-->
-
-        <!--Each Product-->
-        <div class="col-lg-4 bottom-margin-30">
-          <a href="#" class="product-thumnail content-center-v-h">
-            <img src="img/item3.png" alt="Product Title" />
-          </a>
-          <h4 class="product-title">Product Title <span class="hit-count"><i class="far fa-heart"></i> 2k</span></h4>
-          <div class="price-line">$25.99 <span class="offer">25% off</span><span class="prev-price">$32.99</span></div>
-          <span class="text-divider">&nbsp;</span>
-          <div class="row font-size-p-large bottom-margin-5">
-            <span class="col-7">Potential Profit</span>
-            <span class="col-5">Orders</span>
-          </div>
-          <div class="row font-size-p-large font-weight-800 bottom-margin-15">
-            <span class="col-7">$3</span>
-            <span class="col-5 link-color">23</span>
-          </div>
-          <button type="button" class="btn btn-dark">Display On Shop</button>
-        </div>
-        <!--/Each Product-->
-      </div>
-    </div>
-    <!--/right panel-->
   </section>
-  <!--/Main content-->
+  <!--/Start Raising-->
+
+  <!--Start Raising-->
+  <section class="light-green-section">
+    <div class="desktop-view-center">
+      <h2 class="color-title-h3 black text-align-center">Start your fundraising online store today</h2>
+      <p class="max-width-md bottom-margin-40 text-align-center">Raise more money all year long and give a reason for <br class="hiddem-from-md" />supporters to keep coming back.<br /><a href="#">Learn more</a></p>
+      <div id="storeSlider" class="row col-gutter-40">
+        <div class="index-slide-item-width">
+          <a href="#" class="square-thumnail">
+            <img src="img/Store-1.png" alt="Pets &amp; Animals" />
+            <strong>Pets &amp; Animals</strong>
+          </a>
+        </div>
+        <div class="index-slide-item-width">
+          <a href="#" class="square-thumnail">
+            <img src="img/Store-2.png" alt="Non-Profits" />
+            <strong>Non-Profits</strong>
+          </a>
+        </div>
+        <div class="index-slide-item-width">
+          <a href="#" class="square-thumnail">
+            <img src="img/Store-3.png" alt="Schools &amp; Sports" />
+            <strong>Schools &amp; Sports</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/Start Raising-->
+
+  <!--Charity Stories-->
+  <section class="stories-bg-outer">
+    <div class="row col-gutter-40">
+      <div class="col-md-6">
+          <div class="bg-color-black">
+            <div id="causerrSlider" class="causerr-slider-outer">
+              <div class="causerr-items"><img src="img/meet-rich.png" alt="Meet Chris" /></div>
+              <div class="causerr-items"><img src="img/meet-rich.png" alt="Meet Chris" /></div>
+              <div class="causerr-items"><img src="img/meet-rich.png" alt="Meet Chris" /></div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="f-max-width-half">
+          <h4 class="big-bottom-gap">Causerr Charity Stories</h4>
+          <h3 class="color-title-h3">Meet Chris</h3>
+          <h4>Christ raised $70k</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/Charity Stories-->
+
+  <!--Start Charities-->
+  <section class="light-green-section">
+    <div class="desktop-view-center">
+      <h2 class="color-title-h3 black text-align-center bottom-margin-40">Top e-Shop Charities</h2>
+      <div id="charitiesSlider" class="row col-gutter-40">
+        <div class="index-slide-item-width">
+          <a href="#" class="square-thumnail">
+            <img src="img/e-shop-1.png" alt="Pets &amp; Animals" />
+          </a>
+          <div class="slide-text-info">
+            <strong>Cause Title</strong>
+            <p class="bottom-margin-15">Lorem Ipsum is simply dummy text</p>
+            <div><button type="button" class="btn btn-dark">Hide from Shop</button> <strong class="link-color">$24k raised</strong></div>
+          </div>
+        </div>
+        <div class="index-slide-item-width">
+          <a href="#" class="square-thumnail">
+            <img src="img/e-shop-2.png" alt="Non-Profits" />
+          </a>
+          <div class="slide-text-info">
+            <strong>Cause Title</strong>
+            <p class="bottom-margin-15">Lorem Ipsum is simply dummy text</p>
+            <div><button type="button" class="btn btn-dark">Hide from Shop</button> <strong class="link-color">$24k raised</strong></div>
+          </div>
+        </div>
+        <div class="index-slide-item-width">
+          <a href="#" class="square-thumnail">
+            <img src="img/e-shop-3.png" alt="Schools &amp; Sports" />
+          </a>
+          <div class="slide-text-info">
+            <strong>Cause Title</strong>
+            <p class="bottom-margin-15">Lorem Ipsum is simply dummy text</p>
+            <div><button type="button" class="btn btn-dark">Hide from Shop</button> <strong class="link-color">$24k raised</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/Start Charities-->
+
+  <!--Causerr online-->
+  <section class="white-bg-section">
+    <div class="desktop-view-center text-align-center">
+      <p class="bottom-margin-50 para-large">Join countless other charites using their Causerr online <br class="hiddem-from-md" />store to do passive fundrasing all year long</p>
+      <div class="index-icon-series clearfix">
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-paw"></i></span>
+          Animals
+        </a>
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-paint-brush"></i></span>
+          Art, Culture, Humanities
+        </a>
+
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-microphone"></i></span>
+          Community Development
+        </a>
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-graduation-cap"></i></span>
+          Education
+        </a>
+
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-tree"></i></span>
+          Environment
+        </a>
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-heartbeat"></i></span>
+          Health
+        </a>
+
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-wheelchair"></i></span>
+          Human Services
+        </a>
+        <a href="#" class="cat-causerr-item">
+          <span><i class="far fa-hand-paper"></i></span>
+          Human and Civil Rights
+        </a>
+
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-school"></i></span>
+          Religion
+        </a>
+        <a href="#" class="cat-causerr-item">
+          <span><i class="fas fa-users"></i></span>
+          Other
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--/Causerr online-->
+
+  <!--Get Started-->
+  <section class="black-bg-section">
+    <div class="desktop-view-center text-align-center">
+      <p class="bottom-margin-30 para-large color-white">Create your FREE Causerr online store now and start <br class="hiddem-from-md" />funding your mission today!</p>
+      <div class="text-align-center"><button type="button" class="btn btn-success m-large">Get Started</button></div>
+    </div>
+  </section>
+  <!--/Get Started-->
 
   <!--footer-->
   <footer>
@@ -291,28 +354,6 @@
           <li><a href="#">How it Works</a></li>
           <li><a href="#">Back to Charity</a></li>
         </ul>
-      </div>
-      <div class="col-lg-4 hiddem-from-lg">
-        <h5 class="bottom-margin-10">Become an Insider</h5>
-        <p>Be the first to know about deals and upcoming special events for our charity</p>
-        <form>
-          <div class="row">
-            <div class="form-group col-md-8 bottom-margin-20">
-              <label for="firstName" class="font-weight-800">First Name</label>
-              <input type="text" class="block active" id="firstName">
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-8">
-              <label for="emailAddress" class="font-weight-800">Email Address</label>
-              <input type="email" class="block active" id="emailAddress">
-            </div>
-            <div class="form-group col-md-4 no-left-padding">
-              <label>&nbsp;</label>
-              <button type="button" class="btn btn-success form-control">Subscribe</button>
-            </div>
-          </div>
-        </form>
       </div>
     </div>
   </footer>
