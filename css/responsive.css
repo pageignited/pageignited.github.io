@@ -78,6 +78,30 @@
     .creation-forms {
         padding: 40px 0;
     }
+    .checkout-forms {
+        padding-bottom: 70px;
+    }
+    .checkout-forms-holder,
+    .checkout-cart-panel {
+        float: none;
+        width: auto;
+    }
+    .checkout-forms-holder {
+        margin-bottom: 40px;
+    }
+    .checkout-cart-panel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .float-btn-mover {
+        position: fixed;
+        padding:10px 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 10;
+    }
 }
 
 @media (min-width: 768px) {

@@ -84,9 +84,10 @@ textarea.active {
 .bottom-margin-40 { margin-bottom: 40px !important;}
 .bottom-margin-50 { margin-bottom: 50px !important;}
 
-.no-padding { padding: 0 !important;}
-.no-left-padding { padding-left: 0 !important;}
+.no-padding       { padding: 0 !important;}
+.no-left-padding  { padding-left: 0 !important;}
 .no-right-padding { padding-right: 0 !important;}
+.left-padding-30  { padding-left: 30px !important;}
 
 .text-align-left   { text-align: left;}
 .text-align-right  { text-align: right;}
@@ -1320,7 +1321,7 @@ input.search-input:focus {
 }
 .checkout-forms {
     padding:40px 0 100px 0;
-    background: #E5E5E5;
+    background: #F1F1F1;
 }
 .checkout-forms-holder {
     float: left;
@@ -1347,4 +1348,46 @@ input.search-input:focus {
     text-align: right;
     color: #23BD6A;
     display: block;
+}
+.checkbox-in-form {
+    font-size: 16px;
+    font-weight: 400;
+}
+.payment-inline {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+.payment-inline > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right:10px;
+}
+.middle-bg-text {
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+.middle-bg-text::after {
+    content: "";
+    height: 1px;
+    top: 50%;
+    margin-top: -1px;
+    background-color: rgba(0, 0, 0, 0.15);
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+.middle-bg-text span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+    background: #F1F1F1;
+    position: relative;
+    z-index: 2;
+}
+.order-summary-text {
+    padding-left: 40px;
 }
