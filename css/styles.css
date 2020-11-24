@@ -1318,3 +1318,33 @@ input.search-input:focus {
     margin-bottom: 50px;
     text-align: right;
 }
+.checkout-forms {
+    padding:40px 0 100px 0;
+    background: #E5E5E5;
+}
+.checkout-forms-holder {
+    float: left;
+    width: calc(100% - 440px);
+}
+.checkout-cart-panel {
+    float: right;
+    width: 400px;
+}
+.cart-content.in-form {
+    padding: 25px 30px;
+    background-color: #fff;
+}
+.grand-total {
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    text-align: right;
+}
+.grand-total strong {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: right;
+    color: #23BD6A;
+    display: block;
+}

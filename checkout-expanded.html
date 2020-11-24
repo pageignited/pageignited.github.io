@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="not-ie" lang="en">
+<head>
+<!-- Basic meta tags -->
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Checkout</title>
+
+<!-- Google Web Fonts
+================================================== -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link rel="stylesheet" type="text/css" href="fonts/css/all.css">
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /-->
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!-- Slick Caurosel -->
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body class="freezing-menu-static">
+
+  <!--header-->
+  <header id="header">
+    <div class="main-nav-outer fixed-top">
+      <nav class="navbar justify-content-between main-nav">
+        <button type="button" class="btn btn-link link-color">Secure Checkout</button>
+        <button type="button" class="btn btn-link">Continue Shopping</button>
+      </nav>
+    </div>
+  </header>
+  <!--/header-->
+
+  <section class="checkout-forms">
+    <div class="desktop-view-center">
+      <div class="clearfix">
+        <div class="checkout-forms-holder">
+          <h1 class="color-title-h3 black bottom-margin-40">Checkout</h1>
+          <!--Let’s Get Start-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#letsGetStart" role="button" aria-expanded="false" aria-controls="letsGetStart">Let’s Get Start 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+  
+              <span class="steps-count">Step 1/4</span>
+            </div>
+            <div class="collapse show" id="letsGetStart">
+              <div class="row bottom-margin-25 col-gutter-40">
+                <div class="col-md-6">
+                  <label for="FirstName">First Name</label>
+                  <input type="text" class="form-control" id="FirstName">
+                </div>
+                <div class="col-md-6">
+                  <label for="LastName">Last Name</label>
+                  <input type="text" class="form-control" id="LastName">
+                </div>
+              </div>
+              <div class="row bottom-margin-15 col-gutter-40">
+                <div class="col-md-6">
+                  <label for="EmailAddress">Email Address</label>
+                  <input type="email" class="form-control" id="EmailAddress">
+                </div>
+                <div class="col-md-6">
+                  <label class="hiddem-from-md">&nbsp;</label>
+                  <p>We'll send any funds you raise to this email address via electronic check, paypal or debit card. We'll also send a verification email to this address when you launch your shop</p>
+                </div>
+              </div>
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <div class="bottom-margin-40">
+                    <div class="d-flex justify-content-between">
+                      <label for="ContactNumber">Contact Number</label>
+                      <span>Optional</span>
+                    </div>
+                    <input type="text" class="form-control" id="ContactNumber">
+                  </div>
+                  <div class="bottom-margin-25">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="Password">
+                  </div>
+                  <ul class="list-reseter bottom-margin-40">
+                    <li>Your password must have: At least 8 characters</li>
+                    <li>1 uppercase letter</li>
+                    <li>1 lowercase letter</li>
+                    <li>1 number</li>
+                    <li>1 symbol</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="inline-elements">
+                <button type="button" class="btn btn-success btn-x-lg">Continue</button>
+                <small class="line-height-18">By continuing, you agree to the Causerr terms and acknowledge <br class="hiddem-from-md" />receipt of our privacy policy.</small>
+              </div>
+            </div>
+          </div>
+          <!--/Let’s Get Start-->
+  
+          <!--Your Charity-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#yourCharity" role="button" aria-expanded="false" aria-controls="yourCharity">Your Charity 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+              <span class="steps-count">Step 2/4</span>
+            </div>
+            <div class="collapse show" id="yourCharity">
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <p class="bottom-margin-30">We need some additional information so we know how to find you, how to better share your charity with others.</p>
+                  <div class="bottom-margin-40">
+                    <label for="OrganizationName">Organization Name</label>
+                    <input type="text" class="form-control" id="OrganizationName">
+                  </div>
+                  <div class="bottom-margin-25">
+                    <label for="TypeofOrganization">Type of Organization</label>
+                    <select class="block" id="TypeofOrganization">
+                      <option>Type A</option>
+                      <option>Type B</option>
+                      <option>Type C</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row col-gutter-40 bottom-margin-30">
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-between">
+                    <label for="OrganizationDetails">Organization Details</label>
+                    <span>100 words</span>
+                  </div>
+                  <textarea type="text" class="block" id="OrganizationDetails"></textarea>
+                </div>
+                <div class="col-md-6">
+                  <label class="hiddem-from-md">&nbsp;</label>
+                  <p>To raise the most money for your cause, make sure you. Describe in a 100 words what you need funds for. Any detail of what the funds will be used for. Talk about what your these funds would mean to your cause and share how grateful you will be for help</p>
+                </div>
+              </div>
+              <div class="inline-elements">
+                <button type="button" class="btn btn-success btn-x-lg">Continue</button>
+              </div>
+            </div>
+          </div>
+          <!--/Your Charity-->
+  
+          <!--Set up Deposits-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#SetupDeposits" role="button" aria-expanded="false" aria-controls="yourCharity">Set up Deposits 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+              <span class="steps-count">Step 3/4</span>
+            </div>
+            <div class="collapse show" id="SetupDeposits">
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <p class="bottom-margin-30">Add how you would like us to send you the money</p>
+                  <div class="bottom-margin-30 relative">
+                    <label for="OrganizationName">Paypal Account Email Address</label>
+                    <input type="text" class="form-control" id="OrganizationName">
+                    <img class="pay-pal-position" src="img/Paypal-Logo.png" alt="PayPal" />
+                  </div>
+                  <p class="bottom-margin-30">PayPal payments are sent instantly using MassPay (no fees are deducted from your earnings).</p>
+                </div>
+              </div>
+              <div class="inline-elements">
+                <button type="button" class="btn btn-success btn-x-lg">Continue</button>
+              </div>
+            </div>
+          </div>
+          <!--/Set up Deposits-->
+  
+          <!--Access Your Shop-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#AccessYourShop" role="button" aria-expanded="false" aria-controls="yourCharity">Access Your Shop 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+              <span class="steps-count">Step 4/4</span>
+            </div>
+            <div class="collapse show" id="AccessYourShop">
+              <div class="row col-gutter-40">
+                <div class="col-md-8">
+                  <p><strong>Congrats your all set!!!</strong><br />Now what to expect.</p>
+                  <ol start="1" class="text-number-list bottom-margin-50">
+                    <li>Your shop is fully stocked just hide the product you don't want to sell.</li>
+                    <li>You'll just add your charity logo and a cover photo.</li>
+                    <li>Choose a shop URL.</li>
+                    <li>Start sharing your shop with your supporters.</li>
+                    <li>Collect funds for everything your supporters buy forever!</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="inline-elements">
+                <button type="button" class="btn btn-success btn-lg">Take Me to My Shop!</button>
+              </div>
+            </div>
+          </div>
+          <!--/Access Your Shop-->
+        </div>
+        <aside class="checkout-cart-panel">
+          <div class="cart-content in-form">
+            <h3 class="cart-title">Your Cart (2)</h3>
+            <ul class="list-reseter cart-item-list">
+              <li class="cart-item clearfix">
+                <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+                <aside class="cart-item-info">
+                  <div class="d-flex justify-content-between">
+                    <span>Maui Moisture</span>
+                    <a href="#" class="cart-item-action">Remove</a>
+                  </div>
+                  <strong>$25.99</strong>
+                  <p class="no-margin">Option, Option, Option</p>
+                  <span>Qty - 1 +</span>
+                </aside>
+              </li>
+              <li class="cart-item clearfix">
+                <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+                <aside class="cart-item-info">
+                  <div class="d-flex justify-content-between">
+                    <span>Maui Moisture</span>
+                    <a href="#" class="cart-item-action">Remove</a>
+                  </div>
+                  <strong>$25.99</strong>
+                  <p class="no-margin">Option, Option, Option</p>
+                  <span>Qty - 1 +</span>
+                </aside>
+              </li>
+            </ul>
+      
+            <div class="cart-total bottom-margin-20">
+              <ul class="list-reseter">
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Subtotal:</span>
+                  <span class="value">$25.99</span>
+                </li>
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Shipping:</span>
+                  <span class="value">FREE</span>
+                </li>
+              </ul>
+              <p class="bottom-margin-10">Most order ship in 3-5 business days with 3-5 days in transit</p>
+              <ul class="list-reseter">
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Discount:</span>
+                  <span class="value">- $25.99</span>
+                </li>
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Sales Tax:</span>
+                  <span class="value">$9.95</span>
+                </li>
+              </ul>
+            </div>
+            <div class="grand-total bottom-margin-20">
+              Total
+              <strong>$36.93</strong>
+            </div>
+      
+            <button type="button" class="btn btn-lg btn-success block">Place Order</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer>
+    <div class="desktop-view-center row">
+      <div class="col-lg-4">
+        <h3 class="bottom-margin-5"><img src="img/Causerr.png" alt="Causerr" /></h3>
+        <p>Reimagining how fundraising is done</p>
+        <ul class="list-reseter footer-blog-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="block-on-lg"><a href="#">@causerr</a> | <a href="#">#shopacause</a></li>
+        </ul>
+        <p class="copyright">&copy; 2020 Causerr. All Rights Reserved<br /><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+      <div class="col-lg-2 hiddem-from-lg">
+        <h5>Company</h5>
+        <ul class="list-reseter link-list-footer">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Partner with Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 hiddem-from-lg">
+        <h5>Help</h5>
+        <ul class="list-reseter link-list-footer">
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Back to Charity</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--/footer-->
+        
+  <!-- JS
+  ================================================== --> 
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+</html>
