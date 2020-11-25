@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="not-ie" lang="en">
+<head>
+<!-- Basic meta tags -->
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Checkout</title>
+
+<!-- Google Web Fonts
+================================================== -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<!-- Fontawesome -->
+<link rel="stylesheet" type="text/css" href="fonts/css/all.css">
+<!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /-->
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!-- Slick Caurosel -->
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+</head>
+<body class="freezing-menu-static">
+
+  <!--header-->
+  <header id="header">
+    <div class="main-nav-outer fixed-top">
+      <nav class="navbar justify-content-between main-nav">
+        <button type="button" class="btn btn-link link-color">Secure Checkout</button>
+        <button type="button" class="btn btn-link">Continue Shopping</button>
+      </nav>
+    </div>
+  </header>
+  <!--/header-->
+
+  <section class="checkout-forms">
+    <div class="desktop-view-center">
+      <div class="clearfix">
+        <div class="checkout-forms-holder">
+          <h1 class="color-title-h3 black bottom-margin-40">Checkout</h1>
+          <!--Account-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checoutAccount" role="button" aria-expanded="false" aria-controls="checoutAccount">Account 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+  
+              <span class="steps-count">Step 1/4</span>
+            </div>
+            <div class="collapse" id="checoutAccount">
+              <p>Already have an account? You can <a href="#">Sign in</a> here</p>
+              <div class="row bottom-margin-20 col-gutter-40">
+                <div class="col-md-6">
+                  <label for="Email Address">Email Address</label>
+                  <input type="email" class="form-control bottom-margin-10" id="EmailAddress">
+                  <label class="checkbox-control checkbox-in-form">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> Create an account to checkout faster in the future</label>
+                </div>
+              </div>
+              <div class="row bottom-margin-30 col-gutter-40">
+                <div class="col-md-6">
+                  <label for="Password">Password</label>
+                  <input type="password" class="form-control bottom-margin-20" id="Password">
+
+                  <label for="ConfirmPassword">Confirm Password</label>
+                  <input type="password" class="form-control" id="ConfirmPassword">
+                </div>
+                <div class="col-md-6">
+                  <label class="hiddem-from-md">&nbsp;</label>
+                  <ul class="list-reseter bottom-margin-40">
+                    <li>Your password must have: At least 8 characters</li>
+                    <li>1 uppercase letter</li>
+                    <li>1 lowercase letter</li>
+                    <li>1 number</li>
+                    <li>1 symbol</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row col-gutter-40 bottom-margin-30">
+                <div class="col-md-6">
+                  <label class="checkbox-control checkbox-in-form">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> <strong>Stay in the Loop</strong></label>
+                    <div class="left-padding-30">Get exculsive offers, upcoming events, news, and more</div>
+                </div>
+              </div>
+              <div class="inline-elements">
+                <button type="button" class="btn btn-dark btn-x-lg">Continue</button>
+              </div>
+            </div>
+            <div id="checoutAccountText" class="collapsed-text">astrauss@gmail.com</div>
+          </div>
+          <!--/Account-->
+  
+          <!--Shipping-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checkoutShipping" role="button" aria-expanded="false" aria-controls="checkoutShipping">Shipping 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+              <span class="steps-count">Step 2/4</span>
+            </div>
+            <div class="collapse" id="checkoutShipping">
+              
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <label for="FirstName">First Name</label>
+                  <input type="text" class="form-control bottom-margin-20" id="FirstName">
+                </div>
+                <div class="col-md-6">
+                  <label for="LastName">Last Name</label>
+                  <input type="text" class="form-control bottom-margin-20" id="LastName">
+                </div>
+              </div>
+
+              <div class="row col-gutter-40 bottom-margin-20">
+                <div class="col-md-6">
+                  <label for="Company">Company</label>
+                  <input type="text" class="form-control" id="Company">
+                </div>
+              </div>
+
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <label for="StreetAddress">Street Address</label>
+                  <input type="text" class="form-control bottom-margin-20" id="StreetAddress">
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="AptSuiteUnit">Apt/Suite/Unit</label>
+                      <input type="text" class="form-control bottom-margin-20" id="AptSuiteUnit">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <label for="City">City</label>
+                  <input type="text" class="form-control bottom-margin-20" id="City">
+                </div>
+                <div class="col-md-6">
+                  <div class="row col-gutter-40 bottom-margin-20">
+                    <div class="col-6">
+                      <label for="State">State</label>
+                      <select class="block" id="State">
+                        <option>Select</option>
+                        <option>State 1</option>
+                        <option>State 2</option>
+                        <option>State 3</option>
+                      </select>
+                    </div>
+                    <div class="col-6">
+                      <label for="Zip">Zip</label>
+                      <input type="text" class="form-control" id="Zip">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <label for="Country">Country</label>
+                  <input type="text" class="form-control bottom-margin-20" id="Country">
+                </div>
+                <div class="col-md-6">
+                  <label for="Phone">Phone</label>
+                  <input type="text" class="form-control bottom-margin-20" id="Phone">
+                </div>
+              </div>
+              <div class="row col-gutter-40 bottom-margin-20">
+                <div class="col-md-6">
+                  <p>Currnetly, we are able to ship to the continental United States</p>
+                </div>
+              </div>
+
+              <div class="inline-elements">
+                <button type="button" class="btn btn-dark btn-x-lg">Continue</button>
+              </div>
+            </div>
+            <div id="checkoutShippingText" class="collapsed-text">
+              Andrew Strauss<br />
+              Widget Co<br />
+              123 North Washington Street<br />
+              Apt 2<br />Los Angeles, CA 90640
+            </div>
+          </div>
+          <!--/Shipping-->
+  
+          <!--Payment-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checkoutPayment" role="button" aria-expanded="false" aria-controls="checkoutPayment">Payment 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+              <span class="steps-count">Step 3/4</span>
+            </div>
+            <div class="collapse" id="checkoutPayment">
+              
+              <p>Add how you would like us to send you the money</p>
+              <p><strong>Coupon Code</strong><br />Enter your code to add coupons, gift cards, or store credit.</p>
+              
+              <div class="row col-gutter-40 bottom-margin-40">
+                <div class="col-md-6">
+                  <div class="bottom-margin-10">
+                    <input type="text" id="CouponCode"> <button type="button" class="btn btn-dark m-large">Apply</button>
+                  </div>
+                  <span class="badge badge-success">Causerr25  X</span>
+                </div>
+              </div>
+
+              <h3>Express Checkout</h3>
+              <ul class="payment-inline bottom-margin-20">
+                <li><a href="#"><img src="img/pay-shop.png" alt="ShopPay" /></a></li>
+                <li><a href="#"><img src="img/PayPal.png" alt="PayPal" /></a></li>
+                <li><a href="#"><img src="img/Pay-amazon.png" alt="Amazon Pay" /></a></li>
+              </ul>
+              <div class="row col-gutter-40 bottom-margin-20">
+                <div class="col-md-6">
+                  <span class="middle-bg-text"><span>OR</span></span>
+                </div>
+              </div>
+              <div class="row col-gutter-40">
+                <div class="col-md-6">
+                  <label for="CardNumber">Card Number</label>
+                  <input type="text" class="form-control bottom-margin-20" id="CardNumber">
+                  <label class="checkbox-control checkbox-in-form bottom-margin-30">
+                    <input type="checkbox">
+                    <span class="checkmark"></span> Billing address same as Shipping Address</label>
+                </div>
+              </div>
+              <div class="inline-elements">
+                <button type="button" class="btn btn-dark btn-x-lg">Continue</button>
+              </div>
+            </div>
+            <div id="checoutAccountText" class="collapsed-text"><i class="far fa-credit-card"></i> AMEX **** 1251</div>
+          </div>
+          <!--/Payment-->
+  
+          <!--Order Summary-->
+          <div class="forms-each-section">
+            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+              <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#orderSummary" role="button" aria-expanded="false" aria-controls="orderSummary">Order Summary 
+                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+              <span class="steps-count">Step 4/4</span>
+            </div>
+            <div class="collapse show" id="orderSummary">
+              <div class="order-summary-text bottom-margin-40">
+                <p>We are sending 2 items to: Andrew Strauss</p>
+                <p>Please double-check to make sure your cart contents, email, and shipping information entered above is correct.<br />
+                Keep an eye on your inbox. We’ll send updates to <strong>astrauss@gmail.com</strong>.</p>
+              </div>
+
+              <div class="row hiddem-from-lg">
+                <div class="col-md-4"><button type="button" class="btn btn-success block btn-lg">Place Order</button></div>
+              </div>
+            </div>
+          </div>
+          <!--/Order Summary-->
+        </div>
+        <aside class="checkout-cart-panel">
+          <div class="cart-content in-form">
+            <h3 class="cart-title">Your Cart (2)</h3>
+            <ul class="list-reseter cart-item-list">
+              <li class="cart-item clearfix">
+                <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+                <aside class="cart-item-info">
+                  <div class="d-flex justify-content-between">
+                    <span>Maui Moisture</span>
+                    <a href="#" class="cart-item-action">Remove</a>
+                  </div>
+                  <strong>$25.99</strong>
+                  <p class="no-margin">Option, Option, Option</p>
+                  <span>Qty - 1 +</span>
+                </aside>
+              </li>
+              <li class="cart-item clearfix">
+                <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
+                <aside class="cart-item-info">
+                  <div class="d-flex justify-content-between">
+                    <span>Maui Moisture</span>
+                    <a href="#" class="cart-item-action">Remove</a>
+                  </div>
+                  <strong>$25.99</strong>
+                  <p class="no-margin">Option, Option, Option</p>
+                  <span>Qty - 1 +</span>
+                </aside>
+              </li>
+            </ul>
+      
+            <div class="cart-total bottom-margin-20">
+              <ul class="list-reseter">
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Subtotal:</span>
+                  <span class="value">$25.99</span>
+                </li>
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Shipping:</span>
+                  <span class="value">FREE</span>
+                </li>
+              </ul>
+              <p class="bottom-margin-10">Most order ship in 3-5 business days with 3-5 days in transit</p>
+              <ul class="list-reseter">
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Discount:</span>
+                  <span class="value">- $25.99</span>
+                </li>
+                <li class="d-flex justify-content-between cart-total-price">
+                  <span class="label">Sales Tax:</span>
+                  <span class="value">$9.95</span>
+                </li>
+              </ul>
+            </div>
+            <div class="grand-total bottom-margin-20">
+              Total
+              <strong>$36.93</strong>
+            </div>
+            <div class="float-btn-mover">
+              <button type="button" class="btn btn-lg btn-success block">Place Order</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="hiddem-from-lg">
+    <div class="desktop-view-center row">
+      <div class="col-lg-4">
+        <h3 class="bottom-margin-5"><img src="img/Causerr.png" alt="Causerr" /></h3>
+        <p>Reimagining how fundraising is done</p>
+        <ul class="list-reseter footer-blog-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li class="block-on-lg"><a href="#">@causerr</a> | <a href="#">#shopacause</a></li>
+        </ul>
+        <p class="copyright">&copy; 2020 Causerr. All Rights Reserved<br /><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+      <div class="col-lg-2 hiddem-from-lg">
+        <h5>Company</h5>
+        <ul class="list-reseter link-list-footer">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Partner with Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 hiddem-from-lg">
+        <h5>Help</h5>
+        <ul class="list-reseter link-list-footer">
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">How it Works</a></li>
+          <li><a href="#">Back to Charity</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!--/footer-->
+        
+  <!-- JS
+  ================================================== --> 
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+</html>

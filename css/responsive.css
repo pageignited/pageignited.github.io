@@ -237,6 +237,10 @@
         margin-bottom: 30px;
         text-align: center;
     }
+    .collapsed-text,
+    .order-summary-text {
+        padding-left: 25px;
+    }
 }
 
 @media (max-width: 640px) {

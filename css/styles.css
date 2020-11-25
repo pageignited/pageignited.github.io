@@ -1485,3 +1485,12 @@ input.search-input:focus {
     color: #000000;
     vertical-align: middle;
 }
+.collapsed-text {
+    padding-left: 40px;
+}
+.collapse + .collapsed-text {
+    display: block;
+}
+.collapse.show + .collapsed-text {
+    display: none;
+}
