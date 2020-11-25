@@ -1391,3 +1391,97 @@ input.search-input:focus {
 .order-summary-text {
     padding-left: 40px;
 }
+
+.admin-outer {
+    padding: 40px 0 100px 0;
+}
+.left-panel-menu {
+    float: left;
+    width: 180px;
+}
+.data-table-right {
+    float: right;
+    width: calc(100% - 220px);
+}
+.admin-left-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.admin-left-menu > li {
+    margin-bottom: 10px;
+}
+.admin-left-menu > li > a {
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2B302D;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.admin-left-menu > li > a:hover,
+.admin-left-menu > li > a.active {
+    color: #23BD6A;
+    text-decoration: none;
+    background: #F1F1F1;
+}
+.order-table.table th {
+    border-top: none;
+    font-weight: 600;
+    border-bottom-width:1px;
+}
+.order-table.table tr:last-child td {
+    border-bottom: 0;
+}
+.order-table.table th,
+.order-table.table td {
+    font-weight: 600;
+    padding: 0.95rem;
+}
+.v-middle-table.table td {
+    vertical-align: middle;
+}
+.order-table.table .data-expanded td {
+    border: none;
+}
+.ship-status-success {
+    color: #378B03 !important;
+}
+.ship-status-canceled {
+    color:#D58816 !important;
+}
+.cell-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #269ABB;
+}
+.th-content {
+    font-size: 18px;
+}
+.th-content strong {
+    display: block;
+    font-size: 26px;
+    line-height: 36px;
+}
+.table-x-thumb {
+    text-decoration: none;
+    display: block;
+    color: #222222;
+}
+.table-x-thumb img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.table-x-thumb .name {
+    display: inline-block;
+    vertical-align: middle;
+}
+.cell-amoun-text {
+    font-size: 26px;
+    line-height: 36px;
+    color: #000000;
+    vertical-align: middle;
+}
