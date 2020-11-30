@@ -807,6 +807,11 @@ footer {
     padding: 0;
     list-style-position:inside;
 }
+.product-features-list {
+    padding: 20px 25px;
+    position: relative;
+    border-bottom: 5px solid #F2F2F2;
+}
 .text-item-list > li {
     text-align: left;
 }

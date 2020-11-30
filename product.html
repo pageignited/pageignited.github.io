@@ -279,99 +279,115 @@
 
         <span class="category-divider no-bottom-margin">&nbsp;</span>
 
-        <!--product detail info rating-->
-        <ul class="list-reseter side-section-list">
+        <!--product features-->
+        <ul class="product-features-list">
+          <li>Durable polycarbonate shell</li>
+          <li>Ejectable battery that charges your phone</li>
+          <li>TSA-approved combination lock</li>
+          <li>360° spinner wheels</li>
+          <li>Suitcase features leather details</li>
+        </ul>
+        <!--/product features-->
+
+        <!--product detail rating-->
+        <ul class="accordion list-reseter side-section-list" id="productAccordion">
           <li>
-            <ul class="product-features-list">
-              <li>Durable polycarbonate shell</li>
-              <li>Ejectable battery that charges your phone</li>
-              <li>TSA-approved combination lock</li>
-              <li>360° spinner wheels</li>
-              <li>Suitcase features leather details</li>
-            </ul>
-          </li>
-          <li>
-            <a class="expand-collapse-title collapsed" data-toggle="collapse" href="#productDetailsInfo" role="button" aria-expanded="false" aria-controls="productDetailsInfo">Details 
-            <span class="right-icon"><i class="fas fa-plus show-when-collapse"></i><i class="fas fa-minus show-when-expanded"></i></span></a>
-            <div class="collapse multi-collapse" id="productDetailsInfo">
-              <div class="card-text">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-              </div>
+            <a id="collapseProductDetailsTitle" class="expand-collapse-title" data-toggle="collapse" href="#collapseProductDetails" role="button" aria-expanded="true" aria-controls="collapseProductDetails">
+              Details 
+              <span class="right-icon">
+                <i class="fas fa-plus show-when-collapse"></i>
+                <i class="fas fa-minus show-when-expanded"></i>
+              </span>
+            </a>
+        
+            <div id="collapseProductDetails" class="collapse show" aria-labelledby="collapseProductDetails" data-parent="#productAccordion">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
           </li>
+          
           <li>
-            <a class="expand-collapse-title collapsed" data-toggle="collapse" href="#productFinePrint" role="button" aria-expanded="false" aria-controls="productFinePrint">Fine Print 
-              <span class="right-icon"><i class="fas fa-plus show-when-collapse"></i><i class="fas fa-minus show-when-expanded"></i></span></a>
-              <div class="collapse multi-collapse" id="productFinePrint">
-                <div class="card-text">
-                  This is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-                </div>
-              </div>
+            <a id="collapseProductFinePrintTitle" class="expand-collapse-title collapsed" data-toggle="collapse" href="#collapseProductFinePrint" role="button" aria-expanded="false" aria-controls="collapseProductFinePrint">
+              Fine Print 
+              <span class="right-icon">
+                <i class="fas fa-plus show-when-collapse"></i>
+                <i class="fas fa-minus show-when-expanded"></i>
+              </span>
+            </a>
+        
+            <div id="collapseProductFinePrint" class="collapse" aria-labelledby="collapseProductFinePrint" data-parent="#productAccordion">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
           </li>
-
-          <!--product user review-->
+          
+           <!--product user review-->
           <li>
-            <a class="expand-collapse-title" data-toggle="collapse" href="#productReviews" role="button" aria-expanded="false" aria-controls="productReviews">Reviews 
-              <span class="right-icon"><i class="fas fa-plus show-when-collapse"></i><i class="fas fa-minus show-when-expanded"></i></span></a>
-              <div class="collapse show multi-collapse" id="productReviews">
-                <ul class="list-reseter product-review-list bottom-margin-50">
-                  <li class="review-item">
-                    <a href="#" class="review-thumbnail"><img src="img/avatar-4.png" alt="Username" /></a>
-                    <div class="d-flex justify-content-between bottom-margin-20">
-                      <h5 class="no-bottom-margin reviewer-name">Kate Watson <span class="date">Sep 7, 2020</span></h5>
-                      <div class="rating bottom-margin-10">
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                      </div>
+            <a id="collapseProductReviewsTitle" class="expand-collapse-title collapsed" data-toggle="collapse" href="#collapseProductReviews" role="button" aria-expanded="false" aria-controls="collapseProductReviews">
+              Reviews 
+              <span class="right-icon">
+                <i class="fas fa-plus show-when-collapse"></i>
+                <i class="fas fa-minus show-when-expanded"></i>
+              </span>
+            </a>
+        
+            <div id="collapseProductReviews" class="collapse" aria-labelledby="collapseProductReviews" data-parent="#productAccordion">
+              <ul class="list-reseter product-review-list bottom-margin-50">
+                <li class="review-item">
+                  <a href="#" class="review-thumbnail"><img src="img/avatar-4.png" alt="Username" /></a>
+                  <div class="d-flex justify-content-between bottom-margin-20">
+                    <h5 class="no-bottom-margin reviewer-name">Kate Watson <span class="date">Sep 7, 2020</span></h5>
+                    <div class="rating bottom-margin-10">
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
                     </div>
-                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-                  </li>
-                  <li class="review-item">
-                    <a href="#" class="review-thumbnail"><img src="img/avatar-2.png" alt="Username" /></a>
-                    <div class="d-flex justify-content-between bottom-margin-20">
-                      <h5 class="no-bottom-margin reviewer-name">Kate Watson <span class="date">Sep 7, 2020</span></h5>
-                      <div class="rating bottom-margin-10">
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                      </div>
+                  </div>
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                </li>
+                <li class="review-item">
+                  <a href="#" class="review-thumbnail"><img src="img/avatar-2.png" alt="Username" /></a>
+                  <div class="d-flex justify-content-between bottom-margin-20">
+                    <h5 class="no-bottom-margin reviewer-name">Kate Watson <span class="date">Sep 7, 2020</span></h5>
+                    <div class="rating bottom-margin-10">
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
                     </div>
-                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-                  </li>
-                  <li class="review-item">
-                    <a href="#" class="review-thumbnail"><img src="img/avatar-3.png" alt="Username" /></a>
-                    <div class="d-flex justify-content-between bottom-margin-20">
-                      <h5 class="no-bottom-margin reviewer-name">Kate Watson <span class="date">Sep 7, 2020</span></h5>
-                      <div class="rating bottom-margin-10">
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                        <span class="fas fa-star star"></span>
-                      </div>
+                  </div>
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                </li>
+                <li class="review-item">
+                  <a href="#" class="review-thumbnail"><img src="img/avatar-3.png" alt="Username" /></a>
+                  <div class="d-flex justify-content-between bottom-margin-20">
+                    <h5 class="no-bottom-margin reviewer-name">Kate Watson <span class="date">Sep 7, 2020</span></h5>
+                    <div class="rating bottom-margin-10">
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
+                      <span class="fas fa-star star"></span>
                     </div>
-                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
-                  </li>
-                </ul>
+                  </div>
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                </li>
+              </ul>
 
-                <ul class="list-reseter pagination-bar clearfix">
-                  <li><a href="#">First</a></li>
-                  <li><a href="#" class="current">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li>...</li>
-                  <li><a href="#">25</a></li>
-                </ul>
-              </div>
+              <ul class="list-reseter pagination-bar clearfix">
+                <li><a href="#">First</a></li>
+                <li><a href="#" class="current">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>...</li>
+                <li><a href="#">25</a></li>
+              </ul>
+            </div>
           </li>
-          <!--/product user review-->
+           <!--/product user review-->
         </ul>
-         <!--/product detail info rating-->
+        <!--/product detail rating-->
          
          <span class="category-divider hiddem-above-lg">&nbsp;</span>
          

@@ -147,4 +147,33 @@ $(document).ready(function(){
     $('.cart-list-backdrop, .close-cart-menu').click(function(){
       $('body').removeClass('cart-menu-opened');
     });
-})
+
+
+    // Clear the categories filters
+    $('.clear-all-filter').click(function(){
+      $('.cat-filter-options').prop('checked',false);
+      return false
+    });
+});
+
+// Page scroll move based product details accordion
+$('#collapseProductDetails').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+      scrollTop: $("#collapseProductDetailsTitle").offset().top -80
+  }, 250);
+  console.log('collapseProductDetails expanded');
+});
+
+$('#collapseProductFinePrint').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+      scrollTop: $("#collapseProductFinePrintTitle").offset().top - 80
+  }, 250);
+  console.log('collapseProductFinePrint expanded');
+});
+
+$('#collapseProductReviews').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+      scrollTop: $("#collapseProductFinePrintTitle").offset().top
+  }, 250);
+  console.log('collapseProductReviews expanded');
+});
