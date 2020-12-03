@@ -254,11 +254,51 @@
     .order-summary-text {
         padding-left: 25px;
     }
+    .product-title-left {
+        float: none;
+        width: auto;
+    }
+    .charity-percent {
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+    .md-block {
+        display: block;
+    }
+    .md-center-btn {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 640px) {
     .cat-causerr-item {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .form-inline-custom {
+        margin: 0;
+    }
+    .form-inline-custom > * {
+        margin: 0;
+        display: block;
+        float: left;
+    }
+    .form-inline-custom .custom-select {
+        width: 25%;
+        padding-left: 45px;
+        text-align: right;
+    }
+    .md-label-absolute {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .form-inline-custom .inline-cart-btn {
+        width: 74%;
+        margin-left: 1%;
     }
 }

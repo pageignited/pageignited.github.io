@@ -148,6 +148,14 @@ $(document).ready(function(){
       $('body').removeClass('cart-menu-opened');
     });
 
+    // Change the main product thumb on click
+    $('.thumb-series-item img').click(function(){
+      $('#productMainThumb').attr('src',$(this).attr('data-thumb'));
+      $('.thumb-series-item').removeClass('current')
+      $(this).parent('.thumb-series-item').addClass('current')
+      return false
+    });
+
 
     // Clear the categories filters
     $('.clear-all-filter').click(function(){

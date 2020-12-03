@@ -105,18 +105,22 @@
 
   <section class="creation-forms">
     <div class="desktop-view-center">
-      <p class="form-sign-in-text">Already have an account? You can <a href="#">Sign in</a> here</p>
-      <div class="creation-forms-holder">
+      <p class="form-sign-in-text">Already have an account? You can <a href="#" role="button" data-toggle="modal" data-target="#signInModal">Sign in</a> here</p>
+      <div class="creation-forms-holder accordion" id="charityCreationAccordion">
         
         <!--Let’s Get Start-->
         <div class="forms-each-section">
           <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-            <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#letsGetStart" role="button" aria-expanded="false" aria-controls="letsGetStart">Let’s Get Start 
-              <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+            <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#letsGetStart" role="button" aria-expanded="false" aria-controls="letsGetStart">
+              Let’s Get Start 
+              <span class="left-icon">
+                <i class="fas fa-chevron-down show-when-collapse"></i>
+                <i class="fas fa-chevron-up show-when-expanded"></i></span>
+            </a>
 
             <span class="steps-count">Step 1/4</span>
           </div>
-          <div class="collapse show" id="letsGetStart">
+          <div class="collapse show" id="letsGetStart" data-parent="#charityCreationAccordion">
             <div class="row bottom-margin-25 col-gutter-40">
               <div class="col-md-6">
                 <label for="FirstName">First Name</label>
@@ -160,7 +164,7 @@
               </div>
             </div>
             <div class="inline-elements">
-              <button type="button" class="btn btn-success btn-x-lg">Continue</button>
+              <button type="button" class="btn btn-success btn-x-lg" data-toggle="collapse" data-target="#yourCharity" aria-expanded="false" aria-controls="yourCharity">Continue</button>
               <small class="line-height-18">By continuing, you agree to the Causerr terms and acknowledge <br class="hiddem-from-md" />receipt of our privacy policy.</small>
             </div>
           </div>
@@ -170,11 +174,11 @@
         <!--Your Charity-->
         <div class="forms-each-section">
           <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-            <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#yourCharity" role="button" aria-expanded="false" aria-controls="yourCharity">Your Charity 
+            <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#yourCharity" role="button" aria-expanded="false" aria-controls="yourCharity">Your Charity 
               <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
             <span class="steps-count">Step 2/4</span>
           </div>
-          <div class="collapse show" id="yourCharity">
+          <div class="collapse" id="yourCharity" data-parent="#charityCreationAccordion">
             <div class="row col-gutter-40">
               <div class="col-md-6">
                 <p class="bottom-margin-30">We need some additional information so we know how to find you, how to better share your charity with others.</p>
@@ -206,7 +210,7 @@
               </div>
             </div>
             <div class="inline-elements">
-              <button type="button" class="btn btn-success btn-x-lg">Continue</button>
+              <button type="button" class="btn btn-success btn-x-lg" data-toggle="collapse" data-target="#SetupDeposits" aria-expanded="false" aria-controls="SetupDeposits">Continue</button>
             </div>
           </div>
         </div>
@@ -215,11 +219,11 @@
         <!--Set up Deposits-->
         <div class="forms-each-section">
           <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-            <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#SetupDeposits" role="button" aria-expanded="false" aria-controls="yourCharity">Set up Deposits 
+            <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#SetupDeposits" role="button" aria-expanded="false" aria-controls="yourCharity">Set up Deposits 
               <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
             <span class="steps-count">Step 3/4</span>
           </div>
-          <div class="collapse show" id="SetupDeposits">
+          <div class="collapse" id="SetupDeposits" data-parent="#charityCreationAccordion">
             <div class="row col-gutter-40">
               <div class="col-md-6">
                 <p class="bottom-margin-30">Add how you would like us to send you the money</p>
@@ -232,7 +236,7 @@
               </div>
             </div>
             <div class="inline-elements">
-              <button type="button" class="btn btn-success btn-x-lg">Continue</button>
+              <button type="button" class="btn btn-success btn-x-lg" data-toggle="collapse" data-target="#AccessYourShop" aria-expanded="false" aria-controls="AccessYourShop">Continue</button>
             </div>
           </div>
         </div>
@@ -241,11 +245,11 @@
         <!--Access Your Shop-->
         <div class="forms-each-section">
           <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-            <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#AccessYourShop" role="button" aria-expanded="false" aria-controls="yourCharity">Access Your Shop 
+            <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#AccessYourShop" role="button" aria-expanded="false" aria-controls="yourCharity">Access Your Shop 
               <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
             <span class="steps-count">Step 4/4</span>
           </div>
-          <div class="collapse show" id="AccessYourShop">
+          <div class="collapse" id="AccessYourShop" data-parent="#charityCreationAccordion">
             <div class="row col-gutter-40">
               <div class="col-md-8">
                 <p><strong>Congrats your all set!!!</strong><br />Now what to expect.</p>
@@ -259,7 +263,7 @@
               </div>
             </div>
             <div class="inline-elements">
-              <button type="button" class="btn btn-success btn-lg">Take Me to My Shop!</button>
+              <button type="button" class="btn btn-success btn-lg md-block md-center-btn">Take Me to My Shop!</button>
             </div>
           </div>
         </div>
@@ -303,6 +307,45 @@
     </div>
   </footer>
   <!--/footer-->
+
+  <!-- Sign In Modal -->
+  <div id="signInModal" class="modal fade" tabindex="-1" aria-labelledby="signInModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body gray-backgruound">
+          <form>
+            <div class="form-group">
+              <label for="SingInUsername" class="col-form-label">Username:</label>
+              <input type="text" class="form-control" id="SingInUsername">
+            </div>
+            <div class="form-group">
+              <label for="SingInEmail" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="SingInEmail">
+            </div>
+            <div class="form-group">
+              <label for="SingInPassword" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="SingInPassword">
+            </div>
+            <div class="form-group">
+              <label for="SingInConfirmPassword" class="col-form-label">Confirm Password:</label>
+              <input type="password" class="form-control" id="SingInConfirmPassword">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Sign In Modal -->
         
   <!-- JS
   ================================================== --> 

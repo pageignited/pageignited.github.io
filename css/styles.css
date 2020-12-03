@@ -5,6 +5,7 @@ a:hover { text-decoration:none; color:#23BD6A;}
 a:focus,
 a:active { text-decoration:none; outline:none;}
 .link-color { color: #23BD6A;}
+.no-underliune { text-decoration: none;}
 
 h1, h2, h3, h4, h5, h6 { margin:0 0 20px; font-weight: 800;}
 h1 { font-size: 42px; line-height: 60px;}
@@ -71,6 +72,8 @@ textarea.active {
 
 
 /* Tools ------------------- */
+
+.no-border { border: 0 !important;}
 
 .no-margin { margin: 0 !important;}
 .no-top-margin { margin-top: 0 !important;}
@@ -318,7 +321,7 @@ header {
 .checkbox-control {
     display: block;
     position: relative;
-    padding-left: 30px;
+    padding-left: 25px;
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 18px;
@@ -326,6 +329,7 @@ header {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-weight: 600;
 }
 .checkbox-control input {
     position: absolute;
@@ -436,9 +440,18 @@ footer {
     margin-bottom: 0;
     position: relative;
     padding-right: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+}
+.product-title-left {
+    float: left;
+    width: calc(100% - 160px);
+}
+.charity-percent {
+    float: right;
+    width: 155px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 32px;
+    text-align: right;
 }
 .hit-count {
     position: absolute;
@@ -825,7 +838,7 @@ footer {
     position: relative;
     padding-right: 50px;
     font-weight: 400;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .expand-collapse-title.collapsed {
     margin-bottom: 0;
@@ -1498,4 +1511,30 @@ input.search-input:focus {
 }
 .collapse.show + .collapsed-text {
     display: none;
+}
+.w-220 {
+    width: 220px;
+}
+.form-inline-custom {
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.form-inline-custom > * {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3px;
+}
+.form-inline-custom label {
+    line-height: 46px;
+}
+.form-inline-custom .custom-select {
+    width: auto;
+}
+.inline-cart-btn {
+    width: 210px;
+}
+.modal-dialog-scrollable .gray-backgruound {
+    background-color: #E5E5E5;
 }
