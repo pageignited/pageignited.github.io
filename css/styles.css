@@ -329,7 +329,7 @@ header {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 .checkbox-control input {
     position: absolute;
@@ -1547,4 +1547,18 @@ input.search-input:focus {
 }
 .modal-dialog-scrollable .gray-backgruound {
     background-color: #E5E5E5;
+}
+.banner-edit-line {
+    background: #F6FDFF;
+    padding: 15px 0;
+    line-height: 32px;
+    font-size: 18px;
+}
+.preview-link {
+    text-decoration: none;
+    color: #378B03;
+    font-weight: 400;
+}
+.preview-link:hover {
+    color:#257717;
 }
