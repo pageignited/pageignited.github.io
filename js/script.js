@@ -169,19 +169,35 @@ $('#collapseProductDetails').on('shown.bs.collapse', function () {
   $('html, body').animate({
       scrollTop: $("#collapseProductDetailsTitle").offset().top -80
   }, 250);
-  console.log('collapseProductDetails expanded');
 });
 
 $('#collapseProductFinePrint').on('shown.bs.collapse', function () {
   $('html, body').animate({
       scrollTop: $("#collapseProductFinePrintTitle").offset().top - 80
   }, 250);
-  console.log('collapseProductFinePrint expanded');
 });
 
-$('#collapseProductReviews').on('shown.bs.collapse', function () {
+// Page scroll move based charity creation accordion
+$('#letsGetStart').on('shown.bs.collapse', function () {
   $('html, body').animate({
-      scrollTop: $("#collapseProductFinePrintTitle").offset().top
+      scrollTop: $('[href="#letsGetStart"]').offset().top - 80
   }, 250);
-  console.log('collapseProductReviews expanded');
+});
+
+$('#yourCharity').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+    scrollTop: $('[href="#yourCharity"]').offset().top - 80
+  }, 250);
+});
+
+$('#SetupDeposits').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+    scrollTop: $('[href="#SetupDeposits"]').offset().top - 80
+  }, 250);
+});
+
+$('#AccessYourShop').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+    scrollTop: $('[href="#AccessYourShop"]').offset().top - 80
+  }, 250);
 });
