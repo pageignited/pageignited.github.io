@@ -1284,6 +1284,7 @@ input.search-input:focus {
     background-color: #fff;
     border: none;
     padding: 2px 5px;
+    box-shadow: none;
 }
 .cause-select-control:focus {
     outline: none;
