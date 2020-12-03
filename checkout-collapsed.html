@@ -46,224 +46,226 @@
       <div class="clearfix">
         <div class="checkout-forms-holder">
           <h1 class="color-title-h3 black bottom-margin-40">Checkout</h1>
-          <!--Account-->
-          <div class="forms-each-section">
-            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-              <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checoutAccount" role="button" aria-expanded="false" aria-controls="checoutAccount">Account 
-                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
-  
-              <span class="steps-count">Step 1/4</span>
-            </div>
-            <div class="collapse" id="checoutAccount">
-              <p>Already have an account? You can <a href="#">Sign in</a> here</p>
-              <div class="row bottom-margin-20 col-gutter-40">
-                <div class="col-md-6">
-                  <label for="Email Address">Email Address</label>
-                  <input type="email" class="form-control bottom-margin-10" id="EmailAddress">
-                  <label class="checkbox-control checkbox-in-form">
-                    <input type="checkbox">
-                    <span class="checkmark"></span> Create an account to checkout faster in the future</label>
-                </div>
+          <div class="accordion" id="checkoutExpandAccordion">
+            <!--Account-->
+            <div class="forms-each-section">
+              <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+                <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checoutAccount" role="button" aria-expanded="false" aria-controls="checoutAccount">Account 
+                  <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+    
+                <span class="steps-count">Step 1/4</span>
               </div>
-              <div class="row bottom-margin-30 col-gutter-40">
-                <div class="col-md-6">
-                  <label for="Password">Password</label>
-                  <input type="password" class="form-control bottom-margin-20" id="Password">
+              <div class="collapse" id="checoutAccount" data-parent="#checkoutExpandAccordion">
+                <p>Already have an account? You can <a href="#">Sign in</a> here</p>
+                <div class="row bottom-margin-20 col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="Email Address">Email Address</label>
+                    <input type="email" class="form-control bottom-margin-10" id="EmailAddress">
+                    <label class="checkbox-control checkbox-in-form">
+                      <input type="checkbox">
+                      <span class="checkmark"></span> Create an account to checkout faster in the future</label>
+                  </div>
+                </div>
+                <div class="row bottom-margin-30 col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control bottom-margin-20" id="Password">
 
-                  <label for="ConfirmPassword">Confirm Password</label>
-                  <input type="password" class="form-control" id="ConfirmPassword">
+                    <label for="ConfirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="ConfirmPassword">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="hiddem-from-md">&nbsp;</label>
+                    <ul class="list-reseter bottom-margin-40">
+                      <li>Your password must have: At least 8 characters</li>
+                      <li>1 uppercase letter</li>
+                      <li>1 lowercase letter</li>
+                      <li>1 number</li>
+                      <li>1 symbol</li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <label class="hiddem-from-md">&nbsp;</label>
-                  <ul class="list-reseter bottom-margin-40">
-                    <li>Your password must have: At least 8 characters</li>
-                    <li>1 uppercase letter</li>
-                    <li>1 lowercase letter</li>
-                    <li>1 number</li>
-                    <li>1 symbol</li>
-                  </ul>
+                <div class="row col-gutter-40 bottom-margin-30">
+                  <div class="col-md-6">
+                    <label class="checkbox-control checkbox-in-form">
+                      <input type="checkbox">
+                      <span class="checkmark"></span> <strong>Stay in the Loop</strong></label>
+                      <div class="left-padding-30">Get exculsive offers, upcoming events, news, and more</div>
+                  </div>
+                </div>
+                <div class="inline-elements">
+                  <button type="button" class="btn btn-dark btn-x-lg" data-toggle="collapse" data-target="#checkoutShipping" aria-expanded="false" aria-controls="checkoutShipping">Continue</button>
                 </div>
               </div>
-              <div class="row col-gutter-40 bottom-margin-30">
-                <div class="col-md-6">
-                  <label class="checkbox-control checkbox-in-form">
-                    <input type="checkbox">
-                    <span class="checkmark"></span> <strong>Stay in the Loop</strong></label>
-                    <div class="left-padding-30">Get exculsive offers, upcoming events, news, and more</div>
-                </div>
-              </div>
-              <div class="inline-elements">
-                <button type="button" class="btn btn-dark btn-x-lg">Continue</button>
-              </div>
+              <div id="checoutAccountText" class="collapsed-text">astrauss@gmail.com</div>
             </div>
-            <div id="checoutAccountText" class="collapsed-text">astrauss@gmail.com</div>
-          </div>
-          <!--/Account-->
-  
-          <!--Shipping-->
-          <div class="forms-each-section">
-            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-              <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checkoutShipping" role="button" aria-expanded="false" aria-controls="checkoutShipping">Shipping 
-                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
-              <span class="steps-count">Step 2/4</span>
-            </div>
-            <div class="collapse" id="checkoutShipping">
-              
-              <div class="row col-gutter-40">
-                <div class="col-md-6">
-                  <label for="FirstName">First Name</label>
-                  <input type="text" class="form-control bottom-margin-20" id="FirstName">
-                </div>
-                <div class="col-md-6">
-                  <label for="LastName">Last Name</label>
-                  <input type="text" class="form-control bottom-margin-20" id="LastName">
-                </div>
+            <!--/Account-->
+    
+            <!--Shipping-->
+            <div class="forms-each-section">
+              <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+                <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checkoutShipping" role="button" aria-expanded="false" aria-controls="checkoutShipping">Shipping 
+                  <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+                <span class="steps-count">Step 2/4</span>
               </div>
-
-              <div class="row col-gutter-40 bottom-margin-20">
-                <div class="col-md-6">
-                  <label for="Company">Company</label>
-                  <input type="text" class="form-control" id="Company">
+              <div class="collapse" id="checkoutShipping" data-parent="#checkoutExpandAccordion">
+                
+                <div class="row col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="FirstName">First Name</label>
+                    <input type="text" class="form-control bottom-margin-20" id="FirstName">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="LastName">Last Name</label>
+                    <input type="text" class="form-control bottom-margin-20" id="LastName">
+                  </div>
                 </div>
-              </div>
 
-              <div class="row col-gutter-40">
-                <div class="col-md-6">
-                  <label for="StreetAddress">Street Address</label>
-                  <input type="text" class="form-control bottom-margin-20" id="StreetAddress">
+                <div class="row col-gutter-40 bottom-margin-20">
+                  <div class="col-md-6">
+                    <label for="Company">Company</label>
+                    <input type="text" class="form-control" id="Company">
+                  </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <label for="AptSuiteUnit">Apt/Suite/Unit</label>
-                      <input type="text" class="form-control bottom-margin-20" id="AptSuiteUnit">
+
+                <div class="row col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="StreetAddress">Street Address</label>
+                    <input type="text" class="form-control bottom-margin-20" id="StreetAddress">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="AptSuiteUnit">Apt/Suite/Unit</label>
+                        <input type="text" class="form-control bottom-margin-20" id="AptSuiteUnit">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row col-gutter-40">
-                <div class="col-md-6">
-                  <label for="City">City</label>
-                  <input type="text" class="form-control bottom-margin-20" id="City">
-                </div>
-                <div class="col-md-6">
-                  <div class="row col-gutter-40 bottom-margin-20">
-                    <div class="col-6">
-                      <label for="State">State</label>
-                      <select class="block" id="State">
-                        <option>Select</option>
-                        <option>State 1</option>
-                        <option>State 2</option>
-                        <option>State 3</option>
-                      </select>
-                    </div>
-                    <div class="col-6">
-                      <label for="Zip">Zip</label>
-                      <input type="text" class="form-control" id="Zip">
+                <div class="row col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="City">City</label>
+                    <input type="text" class="form-control bottom-margin-20" id="City">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row col-gutter-40 bottom-margin-20">
+                      <div class="col-6">
+                        <label for="State">State</label>
+                        <select class="block" id="State">
+                          <option>Select</option>
+                          <option>State 1</option>
+                          <option>State 2</option>
+                          <option>State 3</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <label for="Zip">Zip</label>
+                        <input type="text" class="form-control" id="Zip">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row col-gutter-40">
-                <div class="col-md-6">
-                  <label for="Country">Country</label>
-                  <input type="text" class="form-control bottom-margin-20" id="Country">
-                </div>
-                <div class="col-md-6">
-                  <label for="Phone">Phone</label>
-                  <input type="text" class="form-control bottom-margin-20" id="Phone">
-                </div>
-              </div>
-              <div class="row col-gutter-40 bottom-margin-20">
-                <div class="col-md-6">
-                  <p>Currnetly, we are able to ship to the continental United States</p>
-                </div>
-              </div>
-
-              <div class="inline-elements">
-                <button type="button" class="btn btn-dark btn-x-lg">Continue</button>
-              </div>
-            </div>
-            <div id="checkoutShippingText" class="collapsed-text">
-              Andrew Strauss<br />
-              Widget Co<br />
-              123 North Washington Street<br />
-              Apt 2<br />Los Angeles, CA 90640
-            </div>
-          </div>
-          <!--/Shipping-->
-  
-          <!--Payment-->
-          <div class="forms-each-section">
-            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-              <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checkoutPayment" role="button" aria-expanded="false" aria-controls="checkoutPayment">Payment 
-                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
-              <span class="steps-count">Step 3/4</span>
-            </div>
-            <div class="collapse" id="checkoutPayment">
-              
-              <p>Add how you would like us to send you the money</p>
-              <p><strong>Coupon Code</strong><br />Enter your code to add coupons, gift cards, or store credit.</p>
-              
-              <div class="row col-gutter-40 bottom-margin-40">
-                <div class="col-md-6">
-                  <div class="bottom-margin-10">
-                    <input type="text" id="CouponCode"> <button type="button" class="btn btn-dark m-large">Apply</button>
+                <div class="row col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="Country">Country</label>
+                    <input type="text" class="form-control bottom-margin-20" id="Country">
                   </div>
-                  <span class="badge badge-success">Causerr25  X</span>
+                  <div class="col-md-6">
+                    <label for="Phone">Phone</label>
+                    <input type="text" class="form-control bottom-margin-20" id="Phone">
+                  </div>
                 </div>
+                <div class="row col-gutter-40 bottom-margin-20">
+                  <div class="col-md-6">
+                    <p>Currnetly, we are able to ship to the continental United States</p>
+                  </div>
+                </div>
+
+                <div class="inline-elements">
+                  <button type="button" class="btn btn-dark btn-x-lg" data-toggle="collapse" data-target="#checkoutPayment" aria-expanded="false" aria-controls="checkoutPayment">Continue</button>
+                </div>
+              </div>
+              <div id="checkoutShippingText" class="collapsed-text">
+                Andrew Strauss<br />
+                Widget Co<br />
+                123 North Washington Street<br />
+                Apt 2<br />Los Angeles, CA 90640
+              </div>
+            </div>
+            <!--/Shipping-->
+    
+            <!--Payment-->
+            <div class="forms-each-section">
+              <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+                <a class="expand-collapse-title as-form-title collapsed" data-toggle="collapse" href="#checkoutPayment" role="button" aria-expanded="false" aria-controls="checkoutPayment">Payment 
+                  <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+                <span class="steps-count">Step 3/4</span>
               </div>
 
-              <h3>Express Checkout</h3>
-              <ul class="payment-inline bottom-margin-20">
-                <li><a href="#"><img src="img/pay-shop.png" alt="ShopPay" /></a></li>
-                <li><a href="#"><img src="img/PayPal.png" alt="PayPal" /></a></li>
-                <li><a href="#"><img src="img/Pay-amazon.png" alt="Amazon Pay" /></a></li>
-              </ul>
-              <div class="row col-gutter-40 bottom-margin-20">
-                <div class="col-md-6">
-                  <span class="middle-bg-text"><span>OR</span></span>
+              <div class="collapse" id="checkoutPayment" data-parent="#checkoutExpandAccordion">
+                <p>Add how you would like us to send you the money</p>
+                <p><strong>Coupon Code</strong><br />Enter your code to add coupons, gift cards, or store credit.</p>
+                
+                <div class="row col-gutter-40 bottom-margin-40">
+                  <div class="col-md-6">
+                    <div class="bottom-margin-10">
+                      <input type="text" id="CouponCode"> <button type="button" class="btn btn-dark m-large">Apply</button>
+                    </div>
+                    <span class="badge badge-success">Causerr25  X</span>
+                  </div>
                 </div>
-              </div>
-              <div class="row col-gutter-40">
-                <div class="col-md-6">
-                  <label for="CardNumber">Card Number</label>
-                  <input type="text" class="form-control bottom-margin-20" id="CardNumber">
-                  <label class="checkbox-control checkbox-in-form bottom-margin-30">
-                    <input type="checkbox">
-                    <span class="checkmark"></span> Billing address same as Shipping Address</label>
-                </div>
-              </div>
-              <div class="inline-elements">
-                <button type="button" class="btn btn-dark btn-x-lg">Continue</button>
-              </div>
-            </div>
-            <div id="checoutAccountText" class="collapsed-text"><i class="far fa-credit-card"></i> AMEX **** 1251</div>
-          </div>
-          <!--/Payment-->
-  
-          <!--Order Summary-->
-          <div class="forms-each-section">
-            <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
-              <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#orderSummary" role="button" aria-expanded="false" aria-controls="orderSummary">Order Summary 
-                <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
-              <span class="steps-count">Step 4/4</span>
-            </div>
-            <div class="collapse show" id="orderSummary">
-              <div class="order-summary-text bottom-margin-40">
-                <p>We are sending 2 items to: Andrew Strauss</p>
-                <p>Please double-check to make sure your cart contents, email, and shipping information entered above is correct.<br />
-                Keep an eye on your inbox. We’ll send updates to <strong>astrauss@gmail.com</strong>.</p>
-              </div>
 
-              <div class="row hiddem-from-lg">
-                <div class="col-md-4"><button type="button" class="btn btn-success block btn-lg">Place Order</button></div>
+                <h3>Express Checkout</h3>
+                <ul class="payment-inline bottom-margin-20">
+                  <li><a href="#"><img src="img/pay-shop.png" alt="ShopPay" /></a></li>
+                  <li><a href="#"><img src="img/PayPal.png" alt="PayPal" /></a></li>
+                  <li><a href="#"><img src="img/Pay-amazon.png" alt="Amazon Pay" /></a></li>
+                </ul>
+                <div class="row col-gutter-40 bottom-margin-20">
+                  <div class="col-md-6">
+                    <span class="middle-bg-text"><span>OR</span></span>
+                  </div>
+                </div>
+                <div class="row col-gutter-40">
+                  <div class="col-md-6">
+                    <label for="CardNumber">Card Number</label>
+                    <input type="text" class="form-control bottom-margin-20" id="CardNumber">
+                    <label class="checkbox-control checkbox-in-form bottom-margin-30">
+                      <input type="checkbox">
+                      <span class="checkmark"></span> Billing address same as Shipping Address</label>
+                  </div>
+                </div>
+                <div class="inline-elements">
+                  <button type="button" class="btn btn-dark btn-x-lg" data-toggle="collapse" data-target="#orderSummary" aria-expanded="false" aria-controls="orderSummary">Continue</button>
+                </div>
+              </div>
+              <div id="checoutAccountText" class="collapsed-text"><i class="far fa-credit-card"></i> AMEX **** 1251</div>
+            </div>
+            <!--/Payment-->
+    
+            <!--Order Summary-->
+            <div class="forms-each-section">
+              <div class="section-titles-bar bottom-margin-20 d-flex justify-content-between">
+                <a class="expand-collapse-title as-form-title" data-toggle="collapse" href="#orderSummary" role="button" aria-expanded="false" aria-controls="orderSummary">Order Summary 
+                  <span class="left-icon"><i class="fas fa-chevron-down show-when-collapse"></i><i class="fas fa-chevron-up show-when-expanded"></i></span></a>
+                <span class="steps-count">Step 4/4</span>
+              </div>
+              <div class="collapse show" id="orderSummary" data-parent="#checkoutExpandAccordion">
+                <div class="order-summary-text bottom-margin-40">
+                  <p>We are sending 2 items to: Andrew Strauss</p>
+                  <p>Please double-check to make sure your cart contents, email, and shipping information entered above is correct.<br />
+                  Keep an eye on your inbox. We’ll send updates to <strong>astrauss@gmail.com</strong>.</p>
+                </div>
+
+                <div class="row hiddem-from-lg">
+                  <div class="col-md-4"><button type="button" class="btn btn-success block btn-lg">Place Order</button></div>
+                </div>
               </div>
             </div>
+            <!--/Order Summary-->
           </div>
-          <!--/Order Summary-->
         </div>
         <aside class="checkout-cart-panel">
           <div class="cart-content in-form">

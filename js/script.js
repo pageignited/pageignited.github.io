@@ -201,3 +201,29 @@ $('#AccessYourShop').on('shown.bs.collapse', function () {
     scrollTop: $('[href="#AccessYourShop"]').offset().top - 80
   }, 250);
 });
+
+
+// Page scroll move based checkout collapsed accordion
+$('#checoutAccount').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+      scrollTop: $('[href="#checoutAccount"]').offset().top - 80
+  }, 250);
+});
+
+$('#checkoutShipping').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+    scrollTop: $('[href="#checkoutShipping"]').offset().top - 80
+  }, 250);
+});
+
+$('#checkoutPayment').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+    scrollTop: $('[href="#checkoutPayment"]').offset().top - 80
+  }, 250);
+});
+
+$('#orderSummary').on('shown.bs.collapse', function () {
+  $('html, body').animate({
+    scrollTop: $('[href="#orderSummary"]').offset().top - 80
+  }, 250);
+});
