@@ -1543,7 +1543,7 @@ input.search-input:focus {
     width: auto;
 }
 .inline-cart-btn {
-    width: 210px;
+    width: 220px;
 }
 .modal-dialog-scrollable .gray-backgruound {
     background-color: #E5E5E5;
@@ -1562,3 +1562,18 @@ input.search-input:focus {
 .preview-link:hover {
     color:#257717;
 }
+.offer-and-charity {
+    line-height: 22px;
+}
+.offer-and-charity .prev-price {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+ .charity-percent-inline {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 22px;
+    font-weight: 400;
+ }
