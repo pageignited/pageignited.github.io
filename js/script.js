@@ -227,3 +227,17 @@ $('#orderSummary').on('shown.bs.collapse', function () {
     scrollTop: $('[href="#orderSummary"]').offset().top - 80
   }, 250);
 });
+
+
+// Cart number increase decrease
+function addCart(id) {
+  var newCount = parseInt($(id).text()) + 1;
+  $(id).text(newCount);
+}
+function substractCart(id) {
+  if(parseInt($(id).text()) <= 0){
+    return
+  }
+  var newCount = parseInt($(id).text()) - 1;
+  $(id).text(newCount);
+}

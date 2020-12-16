@@ -220,7 +220,7 @@
                 </div>
 
                 <h3>Express Checkout</h3>
-                <ul class="payment-inline bottom-margin-20">
+                <ul class="payment-inline bottom-margin-10">
                   <li><a href="#"><img src="img/pay-shop.png" alt="ShopPay" /></a></li>
                   <li><a href="#"><img src="img/PayPal.png" alt="PayPal" /></a></li>
                   <li><a href="#"><img src="img/Pay-amazon.png" alt="Amazon Pay" /></a></li>
@@ -358,25 +358,32 @@
               <li class="cart-item clearfix">
                 <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
                 <aside class="cart-item-info">
-                  <div class="d-flex justify-content-between">
-                    <span>Maui Moisture</span>
-                    <a href="#" class="cart-item-action">Remove</a>
-                  </div>
+                  <div>Maui Moisture</div>
                   <strong>$25.99</strong>
-                  <p class="no-margin">Option, Option, Option</p>
-                  <span>Qty - 1 +</span>
+                  <p class="no-margin bottom-margin-5">Option, Option, Option</p>
+                  <div class="qty-increase-decrease">
+                    <span>Qty</span>
+                    <button class="plain-small-btn" onclick="substractCart('#cartCounterRow1')">-</button>
+                    <span class="total-item" id="cartCounterRow1">1</span>
+                    <button class="plain-small-btn" onclick="addCart('#cartCounterRow1')">+</button>
+                  </div>
                 </aside>
               </li>
               <li class="cart-item clearfix">
                 <a href="#" class="cart-thumb"><img src="img/cart-thumb.png" alt="Product name" /></a>
                 <aside class="cart-item-info">
+                  <div>Maui Moisture</div>
+                  <strong>$25.99</strong>
+                  <p class="no-margin bottom-margin-5">Option, Option, Option</p>
                   <div class="d-flex justify-content-between">
-                    <span>Maui Moisture</span>
+                    <div class="qty-increase-decrease">
+                      <span>Qty</span>
+                      <button class="plain-small-btn" onclick="substractCart('#cartCounterRow2')">-</button>
+                      <span class="total-item" id="cartCounterRow2">1</span>
+                      <button class="plain-small-btn" onclick="addCart('#cartCounterRow2')">+</button>
+                    </div>
                     <a href="#" class="cart-item-action">Remove</a>
                   </div>
-                  <strong>$25.99</strong>
-                  <p class="no-margin">Option, Option, Option</p>
-                  <span>Qty - 1 +</span>
                 </aside>
               </li>
             </ul>

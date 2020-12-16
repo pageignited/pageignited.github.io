@@ -1390,6 +1390,7 @@ input.search-input:focus {
     display: inline-block;
     vertical-align: top;
     margin-right:10px;
+    margin-bottom: 10px;
 }
 .middle-bg-text {
     position: relative;
@@ -1608,4 +1609,23 @@ input.search-input:focus {
 }
 .width-p-25 {
     width: 25%;
+}
+.plain-small-btn {
+    border: none;
+    background:none;
+    padding: 2px 4px;
+    box-shadow: none;
+}
+.plain-small-btn:focus,
+.plain-small-btn:hover,
+.plain-small-btn:active {
+    outline: none;
+}
+.qty-increase-decrease {
+    margin: 0 -2px;
+}
+.qty-increase-decrease > * {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2px;
 }
