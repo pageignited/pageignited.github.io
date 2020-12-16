@@ -305,3 +305,8 @@
         margin-left: 1%;
     }
 }
+@media (max-width: 480px) {
+    .cat-causerr-item {
+        width: 120px;
+    }
+}

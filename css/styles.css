@@ -172,7 +172,7 @@ header {
 .freezing-menu-static .main-nav-outer {
     background: #FFFFFF;
     padding: 5px 0;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.10);
 }
 .navbar.main-nav {
     padding-left: 0;
@@ -398,7 +398,7 @@ footer {
 .footer-blog-links > li > a {
     color: #000000;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
 }
 .footer-blog-links > li > a:hover {
     color: #257717;

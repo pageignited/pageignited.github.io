@@ -1,13 +1,14 @@
 $(document).ready(function(){
   $('#causerrSlider').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     centerMode: false,
     variableWidth: false,
     arrows: true,
     centerPadding: "30px",
+    asNavFor: '#causerrCopy',
     responsive: [
         {
           breakpoint: 767,
@@ -18,7 +19,20 @@ $(document).ready(function(){
     ],
     prevArrow:'<button type="button" class="slick-prev white-away"><i class="fas fa-chevron-left"></i></button>',
     nextArrow:'<button type="button" class="slick-next white-away"><i class="fas fa-chevron-right"></i></button>'
-});  
+  });
+
+  $('#causerrCopy').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: false,
+    arrows: false,
+    centerPadding: "0px",
+    asNavFor: '#causerrSlider'
+  });
   
   $('#maniNavMobile').slick({
         dots: false,
@@ -81,7 +95,23 @@ $(document).ready(function(){
 
     $('#homeBannerSlider').slick({
       dots: true,
-      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      centerMode: true,
+      variableWidth: false,
+      arrows: false,
+      centerPadding: "0px",
+      asNavFor: '#bannerSlider'
+    });
+    $('#bannerSlider').slick({
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
